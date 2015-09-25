@@ -90,7 +90,7 @@ a:hover {
 .rectangle{
     background: url(../images/logo.png) no-repeat ;
     background-size:100%; 
-    margin: 0 0 0 100px ;
+    margin: 0 0 0 30px ;
     width: 530px;
     height: 348px;
     float: left;

@@ -1,0 +1,84 @@
+html {
+	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	font-weight: 300;
+}
+body,ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+a, a:hover , a:visited {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #c22d18;
+	text-decoration: underline;
+	cursor: pointer;
+}
+img{
+	float: left;
+}
+
+.clr{
+	clear:both;
+}
+.h_nav > li{
+	width: 20%;
+	float:left;
+	margin:1.5% 2.5% 0 2.5%;
+}
+.h_nav p{
+	float: left;
+	margin: 0 0 0 33%;
+	font: 250% 'Microsoft YaHei';     /*IE 360字体大小不变化问题*/
+}
+.h_nav img {
+	width:100%;
+	height:100%;	
+}
+
+.nav{
+	width:100%;
+	background: rgb(195,50,52);
+}
+.parts h1{
+	color: white;
+	float: left;
+	font-size: 250%;
+	margin: 1.75% 7% 0 1%;
+}
+.nav a{
+	color: white;
+	float: left;
+	font: 250%/240% 'Microsoft YaHei';
+	margin-left: 5%;
+}
+.web img{
+	margin: 1%;
+}
+.web p{
+	font: 250%/0% 'Microsoft YaHei';
+	float: left;
+	margin-right: 4%;
+}
+.part2 .nav2 .toutiao_nav img{
+/*	width: 10%;
+	height:10%;*/                 /*此处又遇到了问题！*/
+}
+.part2 .nav a{
+	margin: 0 0 0 3%;
+}
+.part2 .nav2 .toutiao_nav .arrow{
+	margin:110% 0 0 0;
+}
+.part2 .nav2 .toutiao_nav .refresh{
+	margin:44% 0 0 0;
+}
+.nav2_display h2{
+	float: left;
+}
+.nav2_display img{
+	vertical-align: text-top;
+}

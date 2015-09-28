@@ -8,22 +8,23 @@ body,ul {
 	padding: 0px;
 	list-style-type: none;
 }
-a, a:hover , a:visited {
+a,  a:visited {
 	color: black;
 	text-decoration: none;
 }
 a:hover {
-	color: #c22d18;
-	text-decoration: underline;
+	text-decoration: none;
 	cursor: pointer;
 }
-img{
+img,p,h2{
 	float: left;
-}
 
+}
 .clr{
 	clear:both;
 }
+
+
 .h_nav > li{
 	width: 20%;
 	float:left;
@@ -77,8 +78,54 @@ img{
 	margin:44% 0 0 0;
 }
 .nav2_display h2{
+	width: 63%;
 	float: left;
+	font-size: 250%;
+	margin-left: 4%;
 }
 .nav2_display img{
-	vertical-align: text-top;
+	float: right;
+	margin: 4% 3% 0 0;
+}
+.nav2_display .zan1 img{
+	float: left;
+}
+
+.music_nav{
+	margin-left: 60%;
+}
+
+.novel_nav{
+	margin-left: 46%;
+}
+.novel_list{
+	margin: 4% 0 0 3%;
+}
+.novel_list li img{
+	margin:0 0 0 5%;
+}
+.novel_list li{
+	text-align: center;                   /*图片文字竖直对齐问题*/
+	float:left;
+	width: 25%;
+	font: 128%/120% normal 'Microsoft YaHei';    
+}
+
+.quba_nav{
+	margin-left: 61%;
+}
+.quba_list1{
+	margin:2% 2% 0 0%;
+}
+.quba_list1 li{
+	width: 48%;
+	float: left;
+	margin-left:2%;
+	font: 150%/120% normal 'Microsoft YaHei';    
+}
+.quba_list2 li{
+	width: 98%;
+	padding-left: 2%;
+	border-top: 1px dashed gray;
+	font: 230%/100%  'Microsoft YaHei';
 }

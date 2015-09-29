@@ -18,7 +18,6 @@ a:hover {
 }
 img,p,h2{
 	float: left;
-
 }
 .clr{
 	clear:both;
@@ -128,4 +127,20 @@ img,p,h2{
 	padding-left: 2%;
 	border-top: 1px dashed gray;
 	font: 230%/100%  'Microsoft YaHei';
+}
+
+.movie_nav{
+	margin-left:53.5%;
+}
+.movie_list p,h2{
+	clear: both;
+}
+.movie_list li{
+	width: 32%;
+	margin: 1% 0 0 1%;
+	float: left;
+}
+
+.hot_nav{
+	margin-left: 76%;
 }

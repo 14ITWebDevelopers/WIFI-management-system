@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
 	<title>home</title>
 	<link rel="stylesheet" href="css/index.css">
 
@@ -94,7 +96,7 @@
 				<div class="part1">
 					<div class="nav1 nav">
 						<h1>酷站</h1>
-						<ul class="kuzhan_nav">
+						<ul class="kuzhan_nav all_nav">
 							<li><a href="">新闻</a></li>
 							<li><a href="">体育</a></li>
 							<li><a href="">军事</a></li>
@@ -143,7 +145,7 @@
 				<div class="part2">
 					<div class="nav2 nav">
 						<h1>头条</h1>
-						<ul class="toutiao_nav">
+						<ul class="toutiao_nav all_nav">
 							<li><a href="">热点</a></li>
 							<li><a href="">科技</a></li>
 							<li><a href="">社会</a></li>
@@ -158,16 +160,30 @@
 					<div class="nav2_display">
 						<ul class="toutiao_display">
 							<li><a href="">
-								<h2>俄罗斯暗示或支持叙利亚总统下台</h2><img src="./img/field.jpg" height="28%" width="28%" alt="">	
-								<a href="" class="zan1"><img src="img/like29.png" height="3%" width="3%" alt=""></a>
-								<a href="" class="zan2"></a>
-								<a href="" class="share"></a>
+								<h2>俄罗斯暗示或支持叙利亚总统下台</h2><img src="./img/field.jpg" height="28%" width="28%" alt="">
+								<div class="hudong">	
+									<a href="" class="zan1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43</a>
+									<a href="" class="zan2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;175</a>
+									<a href="" class="share">
+										<p>中新网移动版</p>
+										<img src="img/share.png" height="10%" width="10%" alt="">
+									</a>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
 							</a></li>
 							<li><a href="">
 								<h2>日本前首相小泉痛批安倍政权重启核电</h2><img src="./img/field.jpg" height="28%" width="28%" alt="">
-								<a href="" class="zan1"><img src="img/like29.png" height="3%" width="3%" alt=""></a>
-								<a href="" class="zan2"></a>
-								<a href="" class="share"></a>
+								<div class="hudong">
+									<a href="" class="zan1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43</a>
+									<a href="" class="zan2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;175</a>
+									<a href="" class="share">
+										<p>中新网移动版</p>
+										<img src="img/share.png" height="10%" width="10%" alt="">
+									</a>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
 							</a></li>
 						</ul>
 					</div>
@@ -176,17 +192,19 @@
 				<div class="part3">
 					<div class="nav3 nav">
 						<h1>音乐</h1>
-						<ul class="music_nav">
+						<ul class="music_nav all_nav">
 							<li><a href="">豆瓣FM</a></li>
 							<li><a href="">本地列表</a></li>
 						</ul>
 						<div class="clr"></div>
 					</div>
+					<div class="player"></div>
+					<div class="clr"></div>
 				</div>
 				<div class="part4">
 					<div class="nav4 nav">
 						<h1>小说</h1>
-						<ul class="novel_nav">
+						<ul class="novel_nav all_nav">
 							<li><a href="">新书榜</a></li>
 							<li><a href="">推荐榜</a></li>
 							<li><a href="">全部书籍</a></li>
@@ -218,7 +236,7 @@
 				<div class="part5">
 					<div class="nav5 nav">
 						<h1>趣吧</h1>
-						<ul class="quba_nav">
+						<ul class="quba_nav all_nav">
 							<li><a href="">搞笑</a></li>
 							<li><a href="">小漫画</a></li>
 							<li><a href="">美女</a></li>
@@ -253,7 +271,7 @@
 				<div class="part6">
 					<div class="nav6 nav">
 						<h1>电影</h1>
-						<ul class="movie_nav">
+						<ul class="movie_nav all_nav">
 							<li><a href="">经典电影</a></li>
 							<li><a href="">热映电视剧</a></li>
 						</ul>
@@ -264,18 +282,19 @@
 							<li><a href="">
 									<img src="img/movie1.jpg" height="100%" width="100%" alt="">
 									<h2>碟中谍5</h2>
-									<!-- <p>阿汤哥继续玩命！</p> -->
+									<p>阿汤哥继续玩命！</p>
 								</a></li>
 							<li><a href="">
 									<img src="img/movie2.jpg" height="100%" width="100%" alt="">
 									<h2>小黄人大眼萌</h2>
-									<!-- <p>《神偷奶爸》犀利前传 </p> -->   <!-- 加上P之后错位的问题 -->
+									<p>《神偷奶爸》犀利前传 </p>
 								</a></li>
 							<li><a href="">
 									<img src="img/movie3.jpg" height="100%" width="100%" alt="">
 									<h2>新娘大作战</h2>
 									<p>倪妮杨颖为结婚开撕</p>
 								</a></li>
+							<div class="clr"></div>
 							<li><a href="">
 									<img src="img/movie4.jpg" height="100%" width="100%" alt="">
 									<h2>华丽上班族</h2>
@@ -298,15 +317,64 @@
 				<div class="part7">
 					<div class="nav7 nav">
 						<h1>热门推荐</h1>
-						<ul class="hot_nav">
+						<ul class="hot_nav all_nav">
 							<li><a href="">应用</a></li>
 							<li><a href="">游戏</a></li>
 						</ul>
 						<div class="clr"></div>
 					</div>
+					<div class="hot_display">
+									<div class="flicker-example" data-block-text="false">
+				<ul>
+					<li data-background="img/tadu.jpg">
+						<!-- <div class="flick-title">Flickerplate Is Working</div>
+						<div class="flick-sub-text">Heaven forbid this package you downloaded is broken. That wouldn't be embarrassing at all.</div> -->
+					</li>
+					<li data-background="img/forest.jpg">
+						<div class="flick-title">Editable via Javascript or CSS</div>
+						<div class="flick-sub-text">Take a look at the extensive documentation to see how you can change the settings in multiple ways.</div>
+					</li>
+					<li data-background="img/frozen-water.jpg">
+						<div class="flick-title">Touch Enabled Through the jQuery Finger Library</div>
+						<div class="flick-sub-text">jQuery Finger is a great touch library that has been included as part of the Flickerplate package.</div>
+					</li>
+				</ul>
+			</div>
+						<ul class="hot_apps">
+							<li>
+								<img src="img/16wifi.jpg" height="100%" width="100%" alt="">
+								<div class="clr"></div>
+								<h2>16wifi</h2>
+								<div class="clr"></div>
+								<p>5.29M</p>
+								<a class="download" href=""  >下载</a>
+							</li>
+							<li>
+								<img src="img/qiyou.jpg" height="100%" width="100%" alt="">
+								<h2>奇悠阅读</h2>
+								<p>5.29M</p>
+								<a class="download" href="">下载</a>
+							</li>
+							<li>
+								<img src="img/ganji.jpg" height="100%" width="100%" alt="">
+								<h2>赶集生活</h2>
+								<p>5.29M</p>
+								<a class="download" href="">下载</a>
+							</li>
+							<li>
+								<img src="img/meituan.jpg" height="100%" width="100%" alt="">
+								<h2>美团</h2>
+								<p>5.29M</p>
+								<a class="download" href="">下载</a>
+							</li>
+						</ul>
+					</div>
 					<div class="clr"></div>
 				</div>
 			</div>
+		</div>
+		<div class="footer">
+			<p>版权：青岛智能产业技术研究院<br>2015 all rights reserved.</p>
 		</div>
 	</div>
 </body>

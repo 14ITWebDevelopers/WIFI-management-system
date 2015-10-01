@@ -23,7 +23,7 @@ img,p,h2{
 	clear:both;
 }
 
-
+/*banner部分*/
 .h_nav > li{
 	width: 20%;
 	float:left;
@@ -32,13 +32,20 @@ img,p,h2{
 .h_nav p{
 	float: left;
 	margin: 0 0 0 33%;
-	font: 250% 'Microsoft YaHei';     /*IE 360字体大小不变化问题*/
+	font: 250% 'Microsoft YaHei';     
 }
 .h_nav img {
 	width:100%;
 	height:100%;	
 }
 
+/*酷站*/
+.all_nav{
+	float: right;
+}
+.all_nav li{
+	float: left;
+}
 .nav{
 	width:100%;
 	background: rgb(195,50,52);
@@ -53,7 +60,7 @@ img,p,h2{
 	color: white;
 	float: left;
 	font: 250%/240% 'Microsoft YaHei';
-	margin-left: 5%;
+	margin-right: 15px;
 }
 .web img{
 	margin: 1%;
@@ -63,13 +70,8 @@ img,p,h2{
 	float: left;
 	margin-right: 4%;
 }
-.part2 .nav2 .toutiao_nav img{
-/*	width: 10%;
-	height:10%;*/                 /*此处又遇到了问题！*/
-}
-.part2 .nav a{
-	margin: 0 0 0 3%;
-}
+
+/*头条*/
 .part2 .nav2 .toutiao_nav .arrow{
 	margin:110% 0 0 0;
 }
@@ -78,25 +80,55 @@ img,p,h2{
 }
 .nav2_display h2{
 	width: 63%;
+	height: 130px;
 	float: left;
 	font-size: 250%;
-	margin-left: 4%;
+	margin: 4% 0 0% 4%;
+}
+.toutiao_display li:first-child{
+	background: url(../img/hot.png) no-repeat;
+}
+.toutiao_display li:last-child{
+	margin-bottom: 4%;
 }
 .nav2_display img{
 	float: right;
 	margin: 4% 3% 0 0;
 }
-.nav2_display .zan1 img{
+.nav2_display .zan1{
+	margin-left: 4%;
+	background: url(../img/like.png) no-repeat;
+}
+.nav2_display .zan2{
+	background: url(../img/dislike.png) no-repeat;
+}
+.nav2_display .zan1,.nav2_display .zan2{
+	float: left;
+	width: 10.1%;
+	color: gray;
+	font: 128%/200% normal 'Microsoft YaHei';   
+}
+.nav2_display .share{
+	float: right;
+}
+.nav2_display .share p{
+	color: gray;
+	font: 128%/0% normal 'Microsoft YaHei';   
+}
+.nav2_display .share img{
+	float: left;
+	vertical-align: middle;
+}
+
+/*音乐*/
+.music_nav{
+	float: right;
+}
+.nav3 li{
 	float: left;
 }
 
-.music_nav{
-	margin-left: 60%;
-}
-
-.novel_nav{
-	margin-left: 46%;
-}
+/*小说*/
 .novel_list{
 	margin: 4% 0 0 3%;
 }
@@ -104,15 +136,13 @@ img,p,h2{
 	margin:0 0 0 5%;
 }
 .novel_list li{
-	text-align: center;                   /*图片文字竖直对齐问题*/
+	text-align: center;                   
 	float:left;
 	width: 25%;
 	font: 128%/120% normal 'Microsoft YaHei';    
 }
 
-.quba_nav{
-	margin-left: 61%;
-}
+/*趣吧*/
 .quba_list1{
 	margin:2% 2% 0 0%;
 }
@@ -129,11 +159,19 @@ img,p,h2{
 	font: 230%/100%  'Microsoft YaHei';
 }
 
-.movie_nav{
-	margin-left:53.5%;
-}
+/*电影*/
 .movie_list p,h2{
 	clear: both;
+}
+.movie_list h2{
+	line-height: 50%;
+}
+.movie_list p{
+	color: gray;
+	font: 120%/0%  'Microsoft YaHei';
+	margin-bottom: 8%;
+/*	height:60px;
+	overflow: hidden;*/               /*溢出处理失败*/
 }
 .movie_list li{
 	width: 32%;
@@ -141,6 +179,40 @@ img,p,h2{
 	float: left;
 }
 
-.hot_nav{
-	margin-left: 76%;
+/*热门*/
+.hot_apps li{
+	float: left;
+	width: 23%;
+	margin-left: 1.5%;
+	font: 150%/100%  'Microsoft YaHei';
+}
+.hot_display .hot_apps p,.hot_display .hot_apps h2{
+	width: 100%;
+	clear:both;
+	text-align: center;
+}
+.hot_display .hot_apps h2{
+	font-weight: normal;
+}
+.hot_display p{
+	color: gray;
+	line-height: 0%;
+	margin-bottom: 25%;
+}
+.hot_apps .download{
+	width: 23%;
+	padding: 10% 30.6%;
+	/*margin: 9.5% 5.95%;*/
+	color: white;
+	font: 170%/100%  'Microsoft YaHei';
+	background: url(../img/botton2.png) no-repeat;
+	clear:both;
+}
+
+/*footer部分*/
+.footer p{
+	width: 100%;
+	text-align: center;
+	font: 230%/200%  'Microsoft YaHei';
+	margin-top: 10%;
 }

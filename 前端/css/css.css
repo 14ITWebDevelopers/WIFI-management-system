@@ -6,6 +6,7 @@ body {
 
 html>body {
     font-size: 10px;
+    background: #3b3b3b;
 }
 
 /* for everything else */
@@ -56,24 +57,23 @@ a:hover {
 
 
 /* log in */
-#out_container{
-    background-color: #3b3b3b;
+.out_container{
     width: 100%;
     height: 100%;
     background-size:100% auto;
     min-height: 643px;
 }
-#container{
+.container{
     width: 1100px;
     margin:  0 auto;
 }
 .logo{
     padding: 40px 0 0 0 ;
 }
-#container .logo>img{
+.container .logo>img{
     float: left;
 }
-#container .logo>h1{
+.container .logo>h1{
     font: 24px/30px '微软雅黑', sans-serif;
     padding: 20px 0 0 20px;
     color: #cf4a5d;
@@ -90,14 +90,13 @@ a:hover {
 }
 .rectangle{
     background: url(../images/logo2.png) no-repeat ;
-    background-size:100%; 
     margin: 0 0 0 30px ;
     width: 530px;
     height: 348px;
     float: left;
 }
 .clear{
-    clear: none;
+    clear: both;
 }
 .rectangle>form>p>img{
     width: 20px;
@@ -109,8 +108,7 @@ a:hover {
     height:40px;
     width:266px;
     margin:25px 0px 0px 30px; 
-    background:url(../images/input_back.png) ;
-    background-size:100%; 
+    background:url(../images/input_back.png) no-repeat;
 }
 .rectangle>form>p>input{
     outline:none;
@@ -122,17 +120,24 @@ a:hover {
     float: left;
 }
 
-.rectangle>form>p+input{
+.rectangle>form>p+a{
+    display: block;
     width: 264px;
     height:39px;
     border-radius:10px;
-    border:none;
-    font:20px/39px '微软雅黑', sans-serif;
-    color:#fff;
+    margin: 59px 0px 0 31px;
     background:url(../images/button.png) no-repeat;
-    background-size:100%;
 }
-
+.rectangle>form>p+a:hover{
+     background:url(../images/button_hover.png) no-repeat;
+}
+.rectangle>form>p+a>input{
+    border: none;
+    font:16px/39px '微软雅黑', sans-serif;
+    color:#fff;
+    margin: 0 114px;
+    background: none;
+}
 .rectangle h2{
     font: 40px '微软雅黑', sans-serif;
     margin: 34px 0 20px 160px;
@@ -158,7 +163,6 @@ a:hover {
 .container_subtitle{
     height: 60px;
     min-width: 1260px;
-    background: #3b3b3b;
 }
 .container_subtitle img{
     width: 240px;
@@ -213,103 +217,102 @@ a:hover {
     background: url(../images/menu.png) repeat-x;
 }
 .container_title{
-    height: 663px;
+    min-width: 1280px;
+    height: 583px;
     background: #3b3b3b;
 }
 .container_title .left{
     width:78px ;
-    min-height: 663px;
+    min-height: 583px;
     background: #3b3b3b;
     float: left;
 }
-.main{
-    width: 70%;
+.left{
     float: left;
-    height: 500px;
+}
+.main>img{
+    width: 1050px;
+    float: left;
+    height: 400px;
     background: #fff;
     border-radius:15px;
+}
+.right{
+    width: 180px;
+    float: left;
+    min-height: 400px;
+}
+.right>ul>li>img{
+    float: left;
+}
+.right>ul>li>img+img{
+    margin: 11px 3px 0 5px;
+}
+.right>ul>li>p{
+    margin: 7px 0 0 8px; 
+    float: left;
+    color: #fff;
+}
+.right>ul>li{
+    margin: 4px 0px 17px 10px;
+}
+.footer{
+    float: left;
+}
+.footer>ul>li>a>img{
+    width: 170px;
+    float: left;
+}
+.footer>ul>li>a+div{
+    margin: 120px 0 0px 0;
+}
+.footer>ul>li>div>img,.footer>ul>li>div>p{
+    float: left;
+}
+.footer>ul>li>div{
+    float: left;
+}
+.footer>ul>li{
+    float: left;
+    max-width: 300px;
 }
 .container_title .left>ul>li>a>div{
     width: 78px;
 }
-.box_one>a>div{
+
+.box_one>a{
+    display: block;
     width: 78px;
     height: 88px;
     background: url(../images/search.png);
-    background-size: 100%;
 }
-.box_one>a>div:hover{
+.box_one>a:hover{
     width: 78px;
     height: 88px;
     background: url(../images/search_hover.png) ;
-    background-size: 100%;
 }
 
-.box_two>a>div{
+.box_two>a{
+    display: block;
     width: 78px;
     height: 88px;
     background: url(../images/line.png) ;
-    background-size: 100%;
 }
-.box_two>a>div:hover{
+.box_two>a:hover{
     width: 78px;
     height: 88px;
     background: url(../images/line_hover.png);
-    background-size: 100%;
 }
 .display{
     width: 331px;
-    min-height: 663px;
+    min-height: 583px;
     background: #3284ff;
     position: absolute;
     left: 78px;
     z-index: 1000;
     display: none;
 }
-.menu{
-    width: 116px;
-    height:30px;
-    float: left;
-    background: #f3f5f7;
-    border-radius:2px;
-    margin: 26px 1px 0px 18px;
-}
 
-.display .menu>a>p{
-    float: right;
-    margin: 6px 2px 0 0px;
-    width: 23px;
-    height: 20px;
-    background: url(../images/arrow.png);
-    background-size: 100%;
-}
-
-.menu_display{
-    display: none;
-}
-.menu_display>ul{
-    position: absolute;
-    left: 18px;
-    top: 56px;
-}
-.menu_display>ul>li{
-    width: 116px;
-    height:30px;
-    background: #f3f5f7;
-    clear: both;
-    
-    text-align: center;
-}
-.menu_display>ul>li>a{
-    width: 116px;
-    line-height: 30px;
-    height:30px;
-    display:block;
-}
-.menu_display>ul>li>a:hover{
-    color: #fff;
-    background: #336ca6;
-}
 .search{
     width: 161px;
     height:30px;
@@ -330,8 +333,15 @@ a:hover {
     height: 27px;
     float: right;
 }
+.display>select{
+    width: 116px;
+    margin: 26px 1px 0px 18px;
+    height: 30px;
+    float: left;
+    border-radius:2px;
+}
 div+ul{
-    margin:100px 0 0 0;
+    margin:22px 0 0 0;
 }
 div+ul>li{
     clear: both;
@@ -345,6 +355,7 @@ div+ul>li>a{
     width: 313px;
     height: 52px;
     padding: 0 0 0 18px;
+    color: #fff;
 }
 div+ul>li>a:hover{
     color: #fff;
@@ -352,10 +363,11 @@ div+ul>li>a:hover{
 }
 .road_display{
     display: none;
+    z-index: 1000;
 }
 .left_display{
     width: 159px;
-    min-height: 663px;
+    min-height: 583px;
     background: #3385ff;
     position: absolute;
     left: 78px;
@@ -382,14 +394,18 @@ div+ul>li>a:hover{
     background: #336ca6;
 }
 .road_display .left_display+div{
+    position: absolute;
+    right: 0px;
     width: 216px;
-    min-height: 663px;
+    min-height: 583px;
     background: #336ca6;
     float: right;
 }
 .road_display>div+div{
+    position: absolute;
+    right: 216px;
     width: 216px;
-    min-height: 663px;
+    min-height: 583px;
     background: #3385ff;
     float: right;
 }

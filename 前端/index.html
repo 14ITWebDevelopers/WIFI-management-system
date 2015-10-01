@@ -6,17 +6,13 @@
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
 	<title>index</title>
 	<link rel="stylesheet"  href="css/css.css">
-	<script src="js/jquery-1.11.1.js"></script>
-	<!--引用百度地图API-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 <style type="text/css">
-    html,body{margin:0;padding:0;}
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 <body>
-	<div id="out_container_subtitle">
+	<div class="out_container_subtitle">
 		<div class="container_subtitle">
 			<img src="images/index_logo.png" alt="logo">
 			<ul>
@@ -39,24 +35,96 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-
-	<div id="out_container_title">
+	<div class="out_container_title">
 		<div class="container_title">
 			<div class="left">
 				<ul>
 					<li class="box_one">
-						<a href="#"><div></div></a>
+						<a href="#"></a>
 					</li>
 					<li class="box_two">
-						<a href="#"><div></div></a>
+						<a href="#"></a>
 					</li>
 				</ul>
-
+			</div>
+			<div class="main">
+				<img src="images/map.png" alt="">
+			</div>
+			<div class="right">
+				<ul>
+					<li>
+						<img src="images/G_car.png" alt="">
+						<img src="images/G_point.png" alt="">
+						<p>正在运营</p>
+					</li>
+					<li class="clear"></li>
+					<li>
+						<img src="images/R_car.png" alt="">
+						<img src="images/R_point.png" alt="">
+						<p>暂停运营</p>
+					</li>
+					<li class="clear"></li>
+				</ul>
+			</div>
+			<div class="footer">
+				<ul>
+					<li>
+						<a href=""><img src="images/circle1.png" alt=""></a>
+						<div>
+							<img src="images/1_div.png" alt="">
+							<p>正在工作设备量</p>
+						</div>
+						<div>
+							<img src="images/2_div.png" alt="">
+							<p>设备总量</p>
+						</div>
+					</li>
+					<li>
+						<a href=""><img src="images/circle2.png" alt=""></a>
+						<div>
+							<img src="images/3_div.png" alt="">
+							<p>正在工作设备量</p>
+						</div>
+						<div>
+							<img src="images/2_div.png" alt="">
+							<p>设备总量</p>
+						</div>
+					</li>
+					<li>
+						<a href=""><img src="images/circle3.png" alt=""></a>
+						<div>
+							<img src="images/4_div.png" alt="">
+							<p>正在工作设备量</p>
+						</div>
+						<div>
+							<img src="images/2_div.png" alt="">
+							<p>设备总量</p>
+						</div>
+					</li>
+					<li>
+						<a href=""><img src="images/circle4.png" alt=""></a>
+						<div>
+							<img src="images/5_div.png" alt="">
+							<p>正在工作设备量</p>
+						</div>
+						<div>
+							<img src="images/6_div.png" alt="">
+							<p>设备总量</p>
+						</div>
+						<div>
+							<img src="images/7_div.png" alt="">
+							<p>设备总量</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 			<div class="display">
-				<div class="menu">
-					<a href="#"><p></p></a>
-				</div>
+				<select>
+ 					<option value ="line1">线路1</option>
+ 					<option value ="line2">线路2</option>
+					<option value ="line3">线路3</option>
+					<option value ="line4">线路4</option>
+				</select>
 				<div class="search">
 					<form action="form">
 						<p>
@@ -65,14 +133,7 @@
 						</p>
 					</form>
 				</div>
-				<div class="menu_display">
-					<ul>
-						<li><a href="#">线路1</a></li>
-						<li><a href="#">线路2</a></li>
-						<li><a href="#">线路3</a></li>
-						<li><a href="#">线路4</a></li>
-					</ul>
-				</div>
+				<div class="clear"></div>
 				<ul>
 					<li><a href="#">鲁BH8305</a></li>
 					<li><a href="#">鲁BH8305</a></li>
@@ -122,44 +183,8 @@
 					</ul>
 				</div>
 			</div>
-
-
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-
-<script type="text/javascript">
-
-$(document).ready(function(){
-$(".box_one>a").click(function(){
-  $(".display").fadeIn(500);
-  $(".road_display").fadeOut("slow");
-  $(".main").show();
-});
-
-$(".display").mouseleave(function(){
-		$(".display").fadeOut("slow");
-	});
-$(".display .menu>a").click(function(){
-		$(".menu_display").fadeIn("slow");
-	});
-$(".menu_display").mouseleave(function(){
-		$(".menu_display").fadeOut("slow");
-	});
-
-$(".box_two>a").click(function(){
-  $(".road_display").fadeIn("slow");
-  $(".left_display").fadeIn("slow");
-  $(".display").fadeOut("slow");
-  $(".main").hide();
-});
-$(".left_display").mouseleave(function(){
-		$(".left_display").fadeOut("slow");
-	});
-});
-
-</script>
-
-
 		</div>
+		<div class="clear"></div>
 	</div>
 </body>
 </html>

@@ -446,3 +446,50 @@ div+ul>li>a:hover{
     color: #fff;
     background: #336ca6;
 }
+/*Advertisement*/
+.box_three>a{
+    display: block;
+    width: 78px;
+    height: 88px;
+    background: url(../images/analysis.png);
+}
+.box_three>a:hover{
+    width: 78px;
+    height: 88px;
+    background: url(../images/analysis_hover.png);
+}
+.adv_main{
+    width: 90%;
+    float: left;
+    margin: 0 0 0 20px;
+} 
+.adv_main>img{
+    width: 89%;
+}
+.adv_main>h1{
+    color: #fff;
+    margin: 10px ;
+    font:20px '微软雅黑', sans-serif;
+}
+.adv_footer>ul>li{
+    float: left;
+    width: 280px;
+    height: 170px;
+    margin: 0 10px 0 10px;
+}
+.adv_footer>ul>li>a>img{
+    width: 280px;
+    height: 170px;
+    overflow: hidden;
+}
+.adv_footer>ul>li>p{
+    margin: 6px 0 0 0;
+    text-align: center;
+}
+.adv_footer>ul>li>p>a{
+    color: #fff;
+    font: 16px '微软雅黑', sans-serif;
+}
+.adv_footer>ul>li>p>a:hover{
+    color: #fe8463;
+}

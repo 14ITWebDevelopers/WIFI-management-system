@@ -157,7 +157,6 @@ a:hover {
 }
 .container_subtitle{
     height: 60px;
-    min-width: 1260px;
     background: #3b3b3b;
 }
 .container_subtitle img{
@@ -167,22 +166,21 @@ a:hover {
 }
 .container_subtitle>ul{
     float: left;
-    min-width: 790px;
     margin:0 50px;
     height: 60px;
-    margin: 0  0 0 150px;
+    margin: 0 100px;
 }
 .container_subtitle>ul>li{
     font: 20px/60px '微软雅黑', sans-serif;
     float: left;
     
 }
+
 .container_subtitle>ul>li>a{
     display: block;
     height: 60px;
     color: white;
     padding: 0 30px;
-    clear: none;
 }
 .container_subtitle>ul>li>a:hover,.action{
     background: url(../images/menu.png) repeat-x;
@@ -198,7 +196,7 @@ a:hover {
     float: left;
 }
 .main{
-    width: 70%;
+    width: 1206px;
     float: left;
     height: 500px;
     background: #fff;

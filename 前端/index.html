@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>index</title>
+	<link rel="stylesheet"  href="css/css.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+	<div id="out_container_subtitle">
+		<div class="container_subtitle">
+			<img src="images/index_logo.png" alt="logo">
+			<ul>
+				<li class="action"><a href="#">总览</a></li>
+				<li><a href="#">广告和流量分析</a></li>
+				<li><a href="#">用户控制</a></li>
+				<li><a href="#">广告设置</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="out_container_title">
+		<div class="container_title">
+			<div class="left">
+				<ul>
+					<li class="box_one">
+						<a href="#"><div></div></a>
+					</li>
+					<li class="box_two">
+						<a href="#"><div></div></a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="display">
+				<div class="menu">
+					<a href="#"><p></p></a>
+				</div>
+				<div class="search">
+					<form action="form">
+						<p>
+							<input type="text">
+							<a href=""><img src="images/home_search.png" alt=""></a>
+						</p>
+					</form>
+				</div>
+				<div class="menu_display">
+					<ul>
+						<li><a href="#">线路1</a></li>
+						<li><a href="#">线路2</a></li>
+						<li><a href="#">线路3</a></li>
+						<li><a href="#">线路4</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+					<li><a href="#">鲁BH8305</a></li>
+				</ul>
+			</div>
+			<div class="road_display">
+				<div class="left_display">
+					<ul>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+						<li><a href="#">黄岛17路</a></li>
+					</ul>
+				</div>
+				<div>
+					<h1>17路上设备<br>正在工作的车辆</h1>
+					<div></div>
+					<ul>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+					</ul>
+				</div>
+				<div>
+					<h1>17路上设备<br>正在工作的车辆</h1>
+					<div></div>
+					<ul>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+						<li><a href="#">鲁BH8305</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+$(".box_one>a").click(function(){
+  $(".display").fadeIn(500);
+  $(".road_display").fadeOut("slow");
+  $(".main").show();
+});
+
+$(".display").mouseleave(function(){
+		$(".display").fadeOut("slow");
+	});
+$(".display .menu>a").click(function(){
+		$(".menu_display").fadeIn("slow");
+	});
+$(".menu_display").mouseleave(function(){
+		$(".menu_display").fadeOut("slow");
+	});
+
+$(".box_two>a").click(function(){
+  $(".road_display").fadeIn("slow");
+  $(".left_display").fadeIn("slow");
+  $(".display").fadeOut("slow");
+  $(".main").hide();
+});
+$(".left_display").mouseleave(function(){
+		$(".left_display").fadeOut("slow");
+	});
+});
+
+</script>
+
+
+		</div>
+	</div>
+</body>
+</html>

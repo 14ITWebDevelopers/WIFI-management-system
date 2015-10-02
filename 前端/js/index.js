@@ -1,15 +1,4 @@
-/*$(document).ready(function() {
-	$(".box_one>a").click(function() {
-		$(".display").toggle("slow");
-		$(".road_display").fadeOut("slow");
-		$(".main,.footer,.right").show();
-	});
-	$(".box_two>a").click(function() {
-		$(".road_display").toggle("slow");;
-		$(".display").fadeOut("slow");
-		$(".main,.footer,.right").toggle();
-	});
-});*/
+
 $(document).ready(function() {
 	$(".left_display").css('display', 'none');
 	var display = $(".display");
@@ -59,19 +48,10 @@ $(document).ready(function() {
 			rigthDiv[this.index].className = " " + "hide_details";
 		}
 	};
-	$(".subtitle_1>a").click(function() {
-		$(".display_1").slideToggle("slow");
+	$(".subtitle_1").click(function() {
+		$(this).next().stop(true, false).slideToggle();
 	});
-	$("#Movie>a+a").click(function() {
-		$(".movie").stop(true, false).slideToggle();
-	});
-	$("#Book>a+a").click(function() {
-		$(".book").stop(true, false).slideToggle();
-	});
-	$("#App>a+a").click(function() {
-		$(".app").stop(true, false).slideToggle();
-	});
-	$(".subtitle>p+a").click(function(e) {
+	$(".subtitle_1+ul>li>img").click(function(e) {
 		$(".dis").stop(true, false).slideToggle();
 		var ev = e || window.event;
 		if (ev.stopPropagation) {
@@ -83,7 +63,7 @@ $(document).ready(function() {
 	document.onclick = function() {
 		$(".dis").stop(true, false).slideUp();
 	}
-	$(".subtitle>p+a").click(function(e) {
+	$(".dis").click(function(e) {
 		var ev = e || window.event;
 		if (ev.stopPropagation) {
 			ev.stopPropagation();

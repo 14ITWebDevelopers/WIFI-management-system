@@ -796,3 +796,39 @@ body{
     color: #fff;
     background: #3385ff;
 }
+/*********************************************/
+/*用户控制-其他设置*/
+/*********************************************/
+.other_set>form>input{
+    width: 270px;
+    height: 39px;
+}
+.up_main>ul>li .other_set>form>input+input{
+    background: #fff;
+    width: 100px;
+    float: right;
+}
+
+.other_set>form{
+    color: #fff;
+    line-height: 54px;
+}
+.up_main>ul>li .web_set>form>textarea{
+    width: 420px;
+    height: 136px;
+    resize: none;
+    border-radius: 4px;
+}
+.up_main>ul>li .web_set>form>textarea+input{
+    width: 100px;
+    float: right;
+    height: 39px;
+    margin: 97px 0 0 0 ;
+    background: #fff;
+}
+.up_main>ul>li .reaset>form>input{
+    width: 100px;
+    float: right;
+    height: 39px;
+    background: #fff;
+}

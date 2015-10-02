@@ -127,6 +127,18 @@ img,p,h2{
 .nav3 li{
 	float: left;
 }
+.player img,.player h2{
+	margin: 4%;
+	font: 250%/100% normal 'Microsoft YaHei';   
+}
+.player audio{
+	width: 500px;
+	height: 30px;
+}
+.playerUI img{
+	margin-right: 5%;
+	float: right;
+}
 
 /*小说*/
 .novel_list{
@@ -160,7 +172,7 @@ img,p,h2{
 }
 
 /*电影*/
-.movie_list p,h2{
+.movie_list p,.movie_list h2{
 	clear: both;
 }
 .movie_list h2{

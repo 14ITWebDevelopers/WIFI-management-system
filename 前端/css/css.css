@@ -842,6 +842,52 @@ body{
 /*********************************************/
 /*超级登录页*/
 /*********************************************/
-.super{
+.super_admin{
     overflow:auto;
+    width: 198px;
+    height: 783px;
+    background: #3b84ff;
+    float: left;
+    margin: 0 0 0 10px;
+    border-radius: 4px;
+}
+.super_admin>ul>li{
+    text-align: center;
+}
+.super_admin>ul>li>a{
+    font: 20px '微软雅黑', sans-serif;
+    display: block;
+    line-height: 52px;
+    width: 198px;
+    height: 52px;
+    color: #fff;
+}
+.super_admin>ul>li>a:hover{
+    color: #fff;
+    background: #336ca6;
+}
+.right{
+    float: left;
+    width: 1110px;
+    margin: 0 0 0 21px;
+}
+.right>img{
+    width: 1110px;
+    height: 583px;
+    border-radius: 4px;
+}
+.right>img+div{
+    height: 190px;
+    margin: 10px 0 0 0 ;
+    background: #fff;
+    border-radius: 4px;
+}
+.right>img+div>h1{
+    font: 16px '微软雅黑', sans-serif;
+    color: #000;
+}
+.right>img+div>p>a{
+    font: 16px '微软雅黑', sans-serif;
+    float: right;
+    margin: 126px 25px 0 0px;
 }

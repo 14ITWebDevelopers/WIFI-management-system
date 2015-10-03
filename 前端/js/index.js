@@ -71,4 +71,54 @@ $(document).ready(function() {
 			window.event.cancelBubble = true; 
 		}
 	})
+
+	$(".box_three").click(function() {
+		$(".search_line").stop(true, false).animate({width:'toggle'});
+		$(".line_button>div>p").next().hide();
+		$(".line_button>div>p,.car_button>div>p").click(function(e) {
+		$(this).next().stop(true, false).slideToggle();
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else if (window.event) {
+			window.event.cancelBubble = true;
+		}
+	})
+	document.onclick = function() {
+		$(".line_button>div>p,.car_button>div>p").next().stop(true, false).slideUp();
+	}
+	$(".line_button>div>p,.car_button>div>p").next().click(function(e) {
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else if (window.event) {
+			window.event.cancelBubble = true; 
+		}
+	})
+	});
+	$(".search_line>ul>li").click(function() {
+		$(".search_car").stop(true, false).animate({width:'toggle'});
+		$(".car_button>div>p").next().css("display","none");
+		$(".line_button>div>p,.car_button>div>p").click(function(e) {
+		$(this).next().stop(true, false).slideToggle();
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else if (window.event) {
+			window.event.cancelBubble = true;
+		}
+	})
+	document.onclick = function() {
+		$(".line_button>div>p,.car_button>div>p").next().stop(true, false).slideUp();
+	}
+	$(".line_button>div>p,.car_button>div>p").next().click(function(e) {
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else if (window.event) {
+			window.event.cancelBubble = true; 
+		}
+	})
+	});
+
 });

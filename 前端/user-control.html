@@ -71,56 +71,9 @@
 					<li><a href="#">黄岛17路</a></li>
 				</ul>
 				<div class="line_button">
-					<div>
 						<p class="we_click">编辑</p>
-						<ul class="user_click">
-							<li class="line_edit">
-								<form action="form">
-								<div>
-									<p>车牌号:</p><input type="text">
-									<div class="clear"></div>
-								</div>
-								<div>
-									<p>设备MAC地址:</p><input type="text">
-								</div>
-								<input type="submit" value="删除">
-								<input type="submit" value="确定">
-								</form>
-							</li>
-						</ul>
-					</div>
-					<div>
 						<p class="we_click">添加</p>
-						<ul class="user_click">
-							<li class="line_add">
-								<form action="form">
-									<div>
-										<p>线路:</p><input type="text">
-										<div class="clear"></div>
-									</div>
-									<input type="submit" value="删除">
-									<input type="submit" value="确定">
-								</form>
-							</li>
-						</ul>
-					</div>
-					<div>
 						<p class="we_click">批量添加</p>
-						<ul class="user_click">
-							<li class="line_alladd">
-								<form action="form">
-									<div>
-										<p>车牌号:</p><input type="file" class="file" name="j" onchange="ye.value=value"> 
-			                            <input name="ye"  class="ye" >
-				            			<input type="button" class="button" value="选择"  onclick=j.click()>
-										<div class="clear"></div>
-									</div>
-									<input type="submit" value="删除">
-									<input type="submit" value="确定">
-								</form>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 			<div class="search_car">
@@ -140,50 +93,72 @@
 					<li><a href="#">黄岛17路</a></li>
 				</ul>
 				<div class="car_button">
-					<div>
 						<p class="we_click">编辑</a></p>
-						<ul class="user_click">
-							<li class="car_edit">
-								<form action="form">
-									<div>
-										<p>线路:</p><input type="text">
-										<div class="clear"></div>
-									</div>
-									<div>
-										<p>车牌号:</p><input type="text">
-										<div class="clear"></div>
-									</div>
-									<div>
-										<p>设备MAC地址:</p><input type="text">
-									</div>
-									<input type="submit" value="删除">
-									<input type="submit" value="确定">
-								</form>
-							</li>
-						</ul>
-					</div>
-					<div>
 						<p class="we_click">添加</p>
-						<ul class="user_click">
-							<li class="car_add">
-								<form action="form">
-									<div>
-										<p>车牌号:</p><input type="text">
-										<div class="clear"></div>
-									</div>
-									<div>
-										<p>设备MAC地址:</p>
-										<input type="text">
-									</div>
-									<input type="submit" value="删除">
-									<input type="submit" value="确定">
-								</form>
-							</li> 
-						</ul>
-					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
+				<form action="form">
+					<ul class="user_click">
+						<li class="line_edit">
+							<div>
+								<p>车牌号:</p><input type="text">
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p>设备MAC地址:</p><input type="text">
+							</div>
+							<input type="submit" value="删除">
+							<input type="submit" value="确定">
+						</li>
+						<li class="line_add">
+							<div>
+								<p>线路:</p><input type="text">
+								<div class="clear"></div>
+							</div>
+							<input type="submit" value="删除">
+							<input type="submit" value="确定">
+						</li>
+						<li class="line_alladd">
+							<div>
+								<p>车牌号:</p><input type="file" class="file" name="j" onchange="ye.value=value">
+			                    <input name="ye"  class="ye" >
+				            	<input type="button" class="button" value="选择"  onclick=j.click()>
+								<div class="clear"></div>
+							</div>
+							<input type="submit" value="删除">
+							<input type="submit" value="确定">
+						</li>
+						<li class="car_edit">
+							<div>
+								<p>线路:</p><input type="text">
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p>车牌号:</p><input type="text">
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p>设备MAC地址:</p><input type="text">
+							</div>
+							<input type="submit" value="删除">
+							<input type="submit" value="确定">
+
+						</li>
+						<li class="car_add">
+							<div>
+								<p>车牌号:</p><input type="text">
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p>设备MAC地址:</p>
+								<input type="text">
+							</div>
+							<input type="submit" value="删除">
+							<input type="submit" value="确定">
+						</li> 
+					</ul>
+				</form>
 		</div>
 		<div class="clear"></div>
 	</div>

@@ -504,13 +504,13 @@ body{
 /*************************************/
 /*广告流量分析（总览）*/
 /*************************************/
-.box_anly>a{
+.box_three>a{
     display: block;
     width: 78px;
     height: 88px;
     background: url(../images/analysis.png);
 }
-.box_anly>a:hover{
+.box_three>a:hover{
     width: 78px;
     height: 88px;
     background: url(../images/analysis_hover.png);
@@ -1018,49 +1018,49 @@ body{
 }
 .user_click .line_edit{
     position: absolute;
-    top: 0px;
+    top: 100px;
     left: 453px;
 }
 .user_click .line_add{
     position: absolute;
-    top: 180px;
+    top: 280px;
     left: 453px;
 }
 .user_click .line_alladd{
     position: absolute;
-    top: 360px;
+    top: 460px;
     left: 453px;
 }
 .user_click .car_add{
     position: absolute;
-    top: 180px;
-    left: 559px;
+    top: 280px;
+    left: 782px;
+}
+.user_click .line_alladd>div,.user_click .line_add>div{
+    margin: 55px 0 0 0 ;
 }
 .user_click .car_edit{
     position: absolute;
-    top: 0px;
-    left: 559px;
+    top: 100px;
+    left: 782px;
 }
-.user_click .car_edit>form{
-    padding: 22px 0 0 0 
+.user_click .car_edit>div{
+    margin: 15px 0 0 0;
 }
 .user_click{
     z-index: 80px;
 }
-.user_click>li>form>div>input{
+.user_click>li>div>input{
     border: none;
     height: 22px;
     width: 168px;
     float: left;
     background: #fff;
 }
-.user_click>li>form{
-    padding: 42px 0 0 0 ;
+.user_click>li>div{
+    margin: 27px 0 14px 0;
 }
-.user_click>li>form>div{
-    margin: 0 0 10px 0;
-}
-.user_click>li>form>div>p{
+.user_click>li>div>p{
     width: 83px;
     height: 22px;
     background: #fff;
@@ -1068,7 +1068,7 @@ body{
     line-height: 22px; 
     margin: 0 10px 0 10px;
 }
-.user_click>li>form>input{
+.user_click>li>input{
     border: none;
     height: 22px;
     width: 81px;
@@ -1076,12 +1076,12 @@ body{
     cursor:pointer;
     margin: 10px 0 0 38px;
 }
-.user_click .line_alladd>form>div .ye,.user_click .line_alladd>form>div.file{
+.user_click .line_alladd>div .ye,.user_click .line_alladd>div.file{
     border: none;
     height: 22px;
     width: 120px;
 }
-.user_click .line_alladd>form>div .button{
+.user_click .line_alladd>div .button{
     background: #fff;
     width: 40px;
     height: 22px;

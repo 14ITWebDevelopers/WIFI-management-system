@@ -504,13 +504,13 @@ body{
 /*************************************/
 /*广告流量分析（总览）*/
 /*************************************/
-.box_three>a{
+.box_anly>a{
     display: block;
     width: 78px;
     height: 88px;
     background: url(../images/analysis.png);
 }
-.box_three>a:hover{
+.box_anly>a:hover{
     width: 78px;
     height: 88px;
     background: url(../images/analysis_hover.png);

@@ -73,6 +73,9 @@ body{
     background-size:100% auto;
     min-height: 643px;
 }
+.out_container_title{
+        min-width:1335px;
+}
 .container{
     width: 1100px;
     margin:  0 auto;
@@ -116,6 +119,9 @@ body{
     height: 20px;
     margin: 10px 1px 0 6px;
     float: left;
+}
+.rectangle>form{
+    margin: -3px 0 0 -4px;
 }
 .rectangle>form>p{
     height:40px;
@@ -187,7 +193,6 @@ body{
 }
 .container_subtitle>ul+ul{
     float: left;
-    min-width: 700px;
     margin:0 50px;
     height: 60px;
     margin: 0  0 0 150px;
@@ -527,6 +532,9 @@ body{
 }
 .adv_footer{
     margin-left: 98px;
+}
+.adv_footer>ul{
+    width: 1200px;
 }
 .adv_footer>ul>li{
     float: left;

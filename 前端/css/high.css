@@ -1,5 +1,5 @@
 /*为高分屏设置*/
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1920px){
     .log_main{
         margin-top: 100px;
     }
@@ -21,7 +21,7 @@
     .container_title .super_right>img{
     	width: 100%;
     	height: 122%;
-    	margin: 0 0 0 0%;
+    	margin: 0 0 0 5%;
 	}
 	.container_title .super_right>img+div{
 		height:33% ;
@@ -41,5 +41,93 @@
 	}
     .search_car{
         left: 28.6% !important;
+    }
+}
+@media screen and (min-width: 1680px){
+    .log_main{
+        margin-top: 100px;
+    }
+    .container_title .display,.container_title .left_display{
+        position: absolute;
+        left: 15%;
+    }
+    .container_title .road_details,.container_title .bus_details{
+        height: 100%;
+    }
+    .container_title .hide_details{
+        height: 100%;
+        margin: 0 10.3% 0  0;
+    }
+    .container_title .super_admin{
+        height: 156%;
+        margin: 0 0 0 3%;
+    }
+    .container_title .super_right>img{
+        width: 100%;
+        height: 122%;
+        margin: 0 0 0 0%;
+    }
+    .container_title .super_right>img+div{
+        height:33% ;
+    }
+    .container_title .search_line{
+        position: absolute;
+        left: 15%;
+    }
+    .container_title{
+        margin: 0 0 0 10.3%;
+    }
+    .out_container_subtitle .container_subtitle>img{
+        margin: 0 0 0 7% ;
+    }
+    .out_container_subtitle .container_subtitle>img+ul{
+        margin: 0 10% 0 0;
+    }
+    .search_car{
+        left: 26.6% !important;
+    }
+}
+@media screen and (min-width: 1600px){
+    .log_main{
+        margin-top: 100px;
+    }
+    .container_title .display,.container_title .left_display{
+        position: absolute;
+        left: 12%;
+    }
+    .container_title .road_details,.container_title .bus_details{
+        height: 100%;
+    }
+    .container_title .hide_details{
+        height: 100%;
+        margin: 0 7.3% 0  0;
+    }
+    .container_title .super_admin{
+        height: 156%;
+        margin: 0 0 0 0%;
+    }
+    .container_title .super_right>img{
+        width: 100%;
+        height: 122%;
+        margin: 0 0 0 0%;
+    }
+    .container_title .super_right>img+div{
+        height:33% ;
+    }
+    .container_title .search_line{
+        position: absolute;
+        left: 12%;
+    }
+    .container_title{
+        margin: 0 0 0 7.3%;
+    }
+    .out_container_subtitle .container_subtitle>img{
+        margin: 0 0 0 5% ;
+    }
+    .out_container_subtitle .container_subtitle>img+ul{
+        margin: 0 7% 0 0;
+    }
+    .search_car{
+        left: 23.6% !important;
     }
 }

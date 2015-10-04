@@ -199,8 +199,7 @@ body{
 }
 .container_subtitle>ul+ul>li{
     font: 20px/60px '微软雅黑', sans-serif;
-    float: left;
-    
+    float: left;  
 }
 .container_subtitle>img+ul{
     float: right;
@@ -1182,4 +1181,75 @@ body{
 }
 .user_click li>a:first-child:hover{
     color: #ddd;
+}
+/*************************************/
+/*广告-综合分析*/
+/*************************************/
+.ad_anly{
+    width: 1200px;
+    float: left;
+}
+.ad_subtitle{
+    min-width: 700px;
+    margin:0 50px;
+    height: 60px;
+    margin: 0  0 0 0px;
+}
+.ad_subtitle>li{
+    font: 20px/60px '微软雅黑', sans-serif;
+    float: left;  
+}
+.ad_subtitle>li>a{
+    display: block;
+    height: 60px;
+    color: white;
+    padding: 0 30px;
+    clear: none;
+    background: #000;
+}
+.ad_subtitle>li>a:hover,.ad_subtitle>.ad_action>a{
+    background: #3b84ff;
+}
+.ad_anly_pic>li{
+    float: left;
+    margin: 9px 76px 15px 0px;
+}
+.ad_anly_pic>li>div{
+    width: 520px;
+    height: 200px;
+    background: #336ca6;
+}
+.ad_anly_pic>li>p{
+    text-align: center;
+    margin: 6px 0 0 0;
+}
+.ad_anly_pic>li>p>a{
+    font: 20px '微软雅黑', sans-serif;
+    color: #fff;
+}
+.ad_anly_pic>li>p>a:hover{
+    color: #fe8463;
+}
+.ad_rank_pic{
+    width: 600px;
+}
+.ad_rank_pic>li{
+    float: left;
+    margin: 9px 76px 15px 0px;
+}
+.ad_rank_pic>li>div{
+    width: 200px;
+    height: 220px;
+    background: #336ca6;
+}
+.ad_rank_pic>li>p{
+    text-align: center;
+    margin: 6px 0 0 0;
+}
+.ad_rank_pic>li>p>a{
+    font: 14px '微软雅黑', sans-serif;
+    color: #fff;
+}
+.ad_rank_pic>li>p>a:hover{
+    color: #fe8463;
 }

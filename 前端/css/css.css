@@ -94,12 +94,7 @@ body{
     padding: 0px 0 0 50px ;
 }
 
-/*为高分屏设置log的垂直位置*/
-@media screen and (min-width: 1600px){
-    .log_main{
-        margin-top: 100px;
-    }
-}
+
 .log_main>img{
     float: left;
     width: 300px;
@@ -281,6 +276,9 @@ body{
 .right>ul>li{
     margin: 4px 0px 17px 10px;
 }
+.footer>ul>li>div>p{
+        color: #fff;
+    }
 .footer{
     /*width: 1200px;*/
     margin-left: 80px;
@@ -600,6 +598,7 @@ body{
     width: 200px;
     display: block !important;
     float: left;
+    height: 100%;
     background-color: #3b84ff;
 }
 .search_car_far{
@@ -928,12 +927,13 @@ body{
 .super_admin{
     overflow:auto;
     width: 198px;
-    height: 783px;
+    min-height: 583px;
     background: #3b84ff;
     float: left;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 108px;
     border-radius: 4px;
 }
+
 .super_admin>ul>li{
     text-align: center;
 }
@@ -951,16 +951,16 @@ body{
 }
 .super_right{
     float: left;
-    width: 1110px;
+    height: 100%;
     margin: 0 0 0 21px;
 }
 .super_right>img{
-    width: 1110px;
-    height: 583px;
+    width: 893px;
+    height: 445px;
     border-radius: 4px;
 }
 .super_right>img+div{
-    height: 190px;
+    height: 128px;
     margin: 10px 0 0 0 ;
     background: #fff;
     border-radius: 4px;
@@ -972,14 +972,14 @@ body{
 .super_right>img+div>p>a{
     font: 16px '微软雅黑', sans-serif;
     float: right;
-    margin: 126px 25px 0 0px;
+    margin: 75px 25px 0 0px;
 }
 /*************************************/
 /*用户控制*/
 /*************************************/
 .big_map>img{
     width: 1200px;
-    height: 583px;
+    height: 633px;
     border-radius: 4px;
 }
 .big_map{
@@ -988,7 +988,7 @@ body{
 }
 .search_line{
     width: 195px;
-    min-height: 393px;
+    height: 100%;
     background: #3b84ff;
     z-index: 2;
     position: absolute;
@@ -1025,7 +1025,9 @@ body{
     background: #336ca6;
 }
 .search_line .line_button{
-    margin: 118px 0 0 0 ;
+    margin: 0;
+    position: absolute;
+    bottom: 100px;
 }
 .car_button .we_click{
     margin-left: 40px;

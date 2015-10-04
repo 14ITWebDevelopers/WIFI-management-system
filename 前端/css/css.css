@@ -598,12 +598,10 @@ body{
     width: 200px;
     display: block !important;
     float: left;
-    height: 100%;
     background-color: #3b84ff;
 }
 .search_car_far{
     width: 200px;
-    position: static;
     float: left;
     background-color: #336ca6;
 }
@@ -988,7 +986,7 @@ body{
 }
 .search_line{
     width: 195px;
-    height: 100%;
+    min-height: 393px;
     background: #3b84ff;
     z-index: 2;
     position: absolute;
@@ -1026,8 +1024,7 @@ body{
 }
 .search_line .line_button{
     margin: 0;
-    position: absolute;
-    bottom: 100px;
+    margin-top: 118px;
 }
 .car_button .we_click{
     margin-left: 40px;
@@ -1048,7 +1045,7 @@ body{
 
 .search_car{
     width: 247px;
-    height: 393px;
+    min-height: 393px;
     background: #336ca6;
     z-index: 2;
     position: absolute;

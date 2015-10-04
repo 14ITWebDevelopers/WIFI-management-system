@@ -4,7 +4,6 @@
         margin-top: 100px;
     }
     .container_title .display,.container_title .left_display{
-    	height: 100%;
     	position: absolute;
     	left: 18.4%;
     }
@@ -40,4 +39,7 @@
 	.out_container_subtitle .container_subtitle>img+ul{
 		margin: 0 13% 0 0;
 	}
+    .search_car{
+        left: 28.6% !important;
+    }
 }

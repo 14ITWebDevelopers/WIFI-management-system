@@ -1,46 +1,46 @@
 /*为高分屏设置*/
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1600px){
     .log_main{
         margin-top: 100px;
     }
     .container_title .display,.container_title .left_display{
-    	position: absolute;
-    	left: 18.4%;
+        position: absolute;
+        left: 12%;
     }
     .container_title .road_details,.container_title .bus_details{
-    	height: 100%;
+        height: 100%;
     }
     .container_title .hide_details{
-    	height: 100%;
-    	margin: 0 14.3% 0  0;
+        height: 100%;
+        margin: 0 7.3% 0  0;
     }
     .container_title .super_admin{
-    	height: 156%;
-    	margin: 0 0 0 3%;
+        height: 156%;
+        margin: 0 0 0 0%;
     }
     .container_title .super_right>img{
-    	width: 100%;
-    	height: 122%;
-    	margin: 0 0 0 5%;
-	}
-	.container_title .super_right>img+div{
-		height:33% ;
-	}
-	.container_title .search_line{
-		position: absolute;
-		left: 18.4%;
-	}
-	.container_title{
-		margin: 0 0 0 14.3%;
-	}
-	.out_container_subtitle .container_subtitle>img{
-		margin: 0 0 0 13% ;
-	}
-	.out_container_subtitle .container_subtitle>img+ul{
-		margin: 0 13% 0 0;
-	}
+        width: 100%;
+        height: 122%;
+        margin: 0 0 0 0%;
+    }
+    .container_title .super_right>img+div{
+        height:33% ;
+    }
+    .container_title .search_line{
+        position: absolute;
+        left: 12%;
+    }
+    .container_title{
+        margin: 0 0 0 7.3%;
+    }
+    .out_container_subtitle .container_subtitle>img{
+        margin: 0 0 0 5% ;
+    }
+    .out_container_subtitle .container_subtitle>img+ul{
+        margin: 0 7% 0 0;
+    }
     .search_car{
-        left: 28.6% !important;
+        left: 23.6% !important;
     }
 }
 @media screen and (min-width: 1680px){
@@ -87,47 +87,48 @@
         left: 26.6% !important;
     }
 }
-@media screen and (min-width: 1600px){
+
+@media screen and (min-width: 1920px){
     .log_main{
         margin-top: 100px;
     }
     .container_title .display,.container_title .left_display{
-        position: absolute;
-        left: 12%;
+    	position: absolute;
+    	left: 18.4%;
     }
     .container_title .road_details,.container_title .bus_details{
-        height: 100%;
+    	height: 100%;
     }
     .container_title .hide_details{
-        height: 100%;
-        margin: 0 7.3% 0  0;
+    	height: 100%;
+    	margin: 0 14.3% 0  0;
     }
     .container_title .super_admin{
-        height: 156%;
-        margin: 0 0 0 0%;
+    	height: 156%;
+    	margin: 0 0 0 3%;
     }
     .container_title .super_right>img{
-        width: 100%;
-        height: 122%;
-        margin: 0 0 0 0%;
-    }
-    .container_title .super_right>img+div{
-        height:33% ;
-    }
-    .container_title .search_line{
-        position: absolute;
-        left: 12%;
-    }
-    .container_title{
-        margin: 0 0 0 7.3%;
-    }
-    .out_container_subtitle .container_subtitle>img{
-        margin: 0 0 0 5% ;
-    }
-    .out_container_subtitle .container_subtitle>img+ul{
-        margin: 0 7% 0 0;
-    }
+    	width: 100%;
+    	height: 122%;
+    	margin: 0 0 0 5%;
+	}
+	.container_title .super_right>img+div{
+		height:33% ;
+	}
+	.container_title .search_line{
+		position: absolute;
+		left: 18.4%;
+	}
+	.container_title{
+		margin: 0 0 0 14.3%;
+	}
+	.out_container_subtitle .container_subtitle>img{
+		margin: 0 0 0 13% ;
+	}
+	.out_container_subtitle .container_subtitle>img+ul{
+		margin: 0 13% 0 0;
+	}
     .search_car{
-        left: 23.6% !important;
+        left: 28.6% !important;
     }
 }

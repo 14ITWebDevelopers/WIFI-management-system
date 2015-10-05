@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".left_display").css('display', 'none');
+    // $(".left_display").css('display', 'none');
     //搜索div
     var display = $(".display");
     //路线div
@@ -88,6 +88,7 @@ $(document).ready(function() {
 	// 线路管理侧边栏
 	boxThreeA.click(function() {
 		userStart();
+		clearUserControl();
 		$(this).toggleClass('boxThreeHover');
 		searchLine.stop(true,false).animate({width:'toggle'});
 	});

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // $(".left_display").css('display', 'none');
     //搜索div
     var display = $(".display");
     //路线div
@@ -57,28 +56,36 @@ $(document).ready(function() {
 
     // 远程更新
     $(".subtitle_1").click(function() {
+    	$(".dis").hide();
 		$(this).next().stop(true, false).slideToggle();
 	});
-	$(".subtitle_1+ul>li>img").click(function(e) {
-		$(".dis").stop(true, false).slideToggle();
-		var ev = e || window.event;
-		if (ev.stopPropagation) {
-			ev.stopPropagation();
-		} else if (window.event) {
-			window.event.cancelBubble = true;
-		}
-	})
-	document.onclick = function() {
-		$(".dis").stop(true, false).slideUp();
-	}
-	$(".dis").click(function(e) {
-		var ev = e || window.event;
-		if (ev.stopPropagation) {
-			ev.stopPropagation();
-		} else if (window.event) {
-			window.event.cancelBubble = true; 
-		}
-	})
+	$(".subtitle_1+ul>li>img").click(function() {
+		$(".dis").hide();
+		$(this).siblings('div.dis').stop(true,false).slideToggle();
+	});
+	$(".dis>p").click(function() {
+		$(this).parent().slideUp();
+	});
+	// $(".subtitle_1+ul>li>img").click(function(e) {
+	// 	$(".dis").stop(true, false).slideToggle();
+	// 	var ev = e || window.event;
+	// 	if (ev.stopPropagation) {
+	// 		ev.stopPropagation();
+	// 	} else if (window.event) {
+	// 		window.event.cancelBubble = true;
+	// 	}
+	// })
+	// document.onclick = function() {
+	// 	$(".dis").stop(true, false).slideUp();
+	// }
+	// $(".dis").click(function(e) {
+	// 	var ev = e || window.event;
+	// 	if (ev.stopPropagation) {
+	// 		ev.stopPropagation();
+	// 	} else if (window.event) {
+	// 		window.event.cancelBubble = true; 
+	// 	}
+	// })
 	// 远程更新结束
 	
 	// 用户控制（总览）

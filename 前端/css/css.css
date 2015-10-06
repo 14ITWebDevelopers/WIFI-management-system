@@ -299,12 +299,10 @@ body{
 .box_one>a{
     display: block;
     width: 78px;
-    height: 88px;
+    height: 87px;
     background: url(../images/search.png);
 }
 .box_one>a:hover{
-    width: 78px;
-    height: 88px;
     background: url(../images/search_hover.png) ;
 }
 .boxTwoHover{
@@ -510,9 +508,6 @@ body{
 .adv_footer{
     margin: 0 0 30px 28px;
 }
-.adv_footer>ul{
-    width: 1200px;
-}
 .adv_footer>ul>li{
     float: left;
     width: 400px;
@@ -651,6 +646,9 @@ body{
     height: 583px;
     margin: 0 0 0 20px;
 }
+.up_main_other_setting{
+    margin-left: 15%;
+}
 .up_main .subtitle{
     background: #3b84ff;
     border-radius:4px;
@@ -739,6 +737,7 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
+    position: relative;
 }
 .book{
     display: none;
@@ -746,6 +745,7 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
+    position: relative;
 }
 .book>li>img{
     width: 148px;
@@ -771,6 +771,7 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
+    position: relative;
 }
 .app>li{
     float: left;
@@ -800,13 +801,21 @@ body{
 }
 .dis{
     position: absolute;
-    top:248px;
-    left: 714px;
+    top:30px;
+    left: 7px;
     width: 438px;
     height: 309px;
     background: #336ca6;
     z-index: 100;
     display: none;
+}
+.dis>p{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    cursor: pointer;
 }
 .dis>form>div .file{
     display: none;
@@ -821,10 +830,11 @@ body{
 }
 .dis>form>div .button{
     font: 12px '微软雅黑', sans-serif;
-    color: #336ca6;
-    width: 160px;
-    background: none;
-    margin: 0 0 0 -163px;
+    color: #fff;
+    width: 50px;
+    background: #3385FF;
+    position: absolute;
+    cursor: pointer;
 }
 .dis>form>div>p{
     display: inline;
@@ -1106,7 +1116,7 @@ body{
 .user_click{
     z-index: 80;
 }
-.user_click>li>div>input{
+.user_click>li>div>select,.user_click>li>div>input{
     border: none;
     height: 22px;
     width: 168px;
@@ -1123,6 +1133,7 @@ body{
     float: left;
     line-height: 22px; 
     margin: 0 10px 0 10px;
+    padding-left: 5px;
 }
 .user_click>li>input{
     border: none;
@@ -1171,7 +1182,7 @@ body{
 /*广告-综合分析*/
 /*************************************/
 .ad_anly{
-    width: 1200px;
+    /*width: 1200px;*/
     float: left;
 }
 .ad_subtitle{

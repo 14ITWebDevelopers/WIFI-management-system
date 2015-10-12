@@ -195,7 +195,7 @@ img,p,h2{
 .hot_apps li{
 	float: left;
 	width: 23%;
-	margin-left: 1.5%;
+	margin:  0 0  5% 1.5%;
 	font: 150%/100%  'Microsoft YaHei';
 }
 .hot_display .hot_apps p,.hot_display .hot_apps h2{
@@ -221,10 +221,27 @@ img,p,h2{
 	clear:both;
 }
 
+/*留言*/
+.remark textarea{
+	width: 96%;
+	height: 300px;
+	font: 200%/150%  'Microsoft YaHei';
+	margin: 2% 0 0 1.8%;
+}
+.remark input{
+	color: white;
+	background: rgb(195,50,52);
+	float: right;
+	font: 250%/210%  'Microsoft YaHei';
+	padding: 0 5%;
+	margin: 1.5%;
+	border-radius: 10px;
+}
+
 /*footer部分*/
 .footer p{
 	width: 100%;
 	text-align: center;
 	font: 230%/200%  'Microsoft YaHei';
-	margin-top: 10%;
+	margin-top: 6%;
 }

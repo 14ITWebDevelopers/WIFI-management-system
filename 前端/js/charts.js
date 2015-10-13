@@ -32,9 +32,9 @@ var labelBottom = {
 			show: true,
 			position: 'center',
 			textStyle: {
-				fontSize: 26,
+				fontSize: 20,
 				fontFamily: 'Microsoft YaHei, sans-serif',
-				color: '#fff',
+				color: '#242424',
 			}
 		},
 		labelLine: {
@@ -55,7 +55,7 @@ function workOption() {
             y: 'bottom',
             data: ['正在工作设备量', '设备总量'],
             textStyle: {
-                color: '#fff'
+                color: '#000'
             }
         },
         title: {
@@ -64,7 +64,7 @@ function workOption() {
             text: '正常工作\n',
             textStyle: {
                 fontFamily: 'Microsoft YaHei, sans-serif',
-                fontSize: 20,
+                fontSize: 16,
                 color: '#FF7F50',
                 textAlign: 'center'
             },
@@ -101,7 +101,7 @@ function onlineOption(){
             y: 'bottom',
             data: ['当前在线总人数', '已经认证人数'],
             textStyle: {
-                color: '#fff'
+                color: '#000'
             }
         },
         title: {
@@ -110,7 +110,7 @@ function onlineOption(){
             text: '在线人数\n',
             textStyle: {
                 fontFamily: 'Microsoft YaHei, sans-serif',
-                fontSize: 20,
+                fontSize: 16,
                 color: myColor[1],
                 textAlign: 'center'
             },
@@ -157,7 +157,7 @@ function flowOption(){
             y: 'bottom',
             data: ['已用流量', '所有设备流量总量'],
             textStyle: {
-                color: '#fff'
+                color: '#000'
             }
         },
         title: {
@@ -166,7 +166,7 @@ function flowOption(){
             text: '流量已用\n',
             textStyle: {
                 fontFamily: 'Microsoft YaHei, sans-serif',
-                fontSize: 20,
+                fontSize: 16,
                 color: myColor[3],
             },
             link: './index-work.html'
@@ -212,7 +212,7 @@ function adOption(){
             y: 'bottom',
             data: ['广告下载量', '本地资源访问量', 'APP下载量'],
             textStyle: {
-                color: '#fff'
+                color: '#000'
             }
         },
         title: {
@@ -221,8 +221,8 @@ function adOption(){
             text: '广告点击量',
             textStyle: {
                 fontFamily: 'Microsoft YaHei, sans-serif',
-                fontSize: 20,
-                color: '#fff'
+                fontSize: 16,
+                color: '#000'
             },
             link: 'http://www.baidu.com'
 

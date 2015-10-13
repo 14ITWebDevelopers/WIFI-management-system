@@ -142,9 +142,6 @@ body{
     background: none;
     float: left;
 }
-.weather{
-    margin: 471% 0 0 0 ;
-}
 .submit{
     display: block;
     width: 264px;
@@ -186,7 +183,7 @@ body{
 /************************************/
 .out_container_subtitle{
     width: 100%;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 .container_subtitle{
     height: 60px;
@@ -248,34 +245,44 @@ body{
 }
 .container_title{
     min-width: 1280px;
-    height: 583px;
+    /*height: 583px;*/
     background: #3b3b3b;
 }
 .container_title .left{
     width:54px ;
+    height: 530px;
     background: #252525;
     float: left;
 }
 .left{
     float: left;
+/*    position: absolute;
+    left: 0;
+    z-index: 1000;*/
+
+}
+.weather{
+    margin-top: 250px;
 }
 .left a{
     cursor: pointer;
 }
 .main{
-    float: left;
     margin-left: 30px;
     width: 75%;
 }
-.main>img{
-    width: 100%;
-    background: #fff;
-    border-radius:15px;
+#allmap{
+    width: 95.5%;
+    height: 530px;
 }
 .right{
     width: 180px;
-    float: left;
-    min-height: 400px;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    border-radius: 10px;
+    background-color: #ddd;
+    background-color: rgba(221,221,221,0.6);
 }
 .right>ul>li>img{
     float: left;
@@ -286,21 +293,33 @@ body{
 .right>ul>li>p{
     margin: 7px 0 0 8px; 
     float: left;
-    color: #fff;
+    color: #000;
 }
 .right>ul>li{
     margin: 4px 0px 17px 10px;
 }
+.address-footer{
+    width: 159px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 10px;
+}
 .footer>ul>li>div>p{
-        color: #fff;
-    }
+    color: #fff;
+}
 .footer{
-    margin-left: 80px;
+    /*margin-left: 80px;*/
+    position: absolute;
+    top: 340px;
+    left: 300px;
 }
 .footer>ul>li{
     float: left;
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 240px;
+    border-radius: 200px;
+    opacity: 0.7;
+    margin-right: 30px;
 }
 
 .boxOneHover{
@@ -331,11 +350,11 @@ body{
 }
 .display{
     width: 331px;
-    min-height: 583px;
+    min-height: 530px;
     background: #3284ff;
     position: absolute;
     left: 54px;
-    top: 100px;
+    top: 60px;
     z-index: 1000;
     display: none;
 }
@@ -395,11 +414,11 @@ body{
 }
 .left_display{
     width: 159px;
-    min-height: 583px;
+    min-height: 530px;
     background: #3385ff;
     position: absolute;
     left: 54px;
-    top: 100px;
+    top: 60px;
     display: none;
 }
 .left_display>ul{
@@ -426,7 +445,7 @@ body{
 .hide_details{
     position: absolute;
     right: 20px;
-    top: 100px;
+    top: 60px;
 }
 .hideTemp,.hideTempAnother{
     display: none;
@@ -436,13 +455,13 @@ body{
 }
 .road_details{
     width: 216px;
-    min-height: 583px;
+    min-height: 530px;
     background: #336ca6;
     float: right;
 }
 .bus_details{
     width: 216px;
-    min-height: 583px;
+    min-height: 530px;
     background: #3385ff;
     float: right;
 }
@@ -513,14 +532,14 @@ body{
     width: 90%;
     height: 300px;
     float: left;
-    margin: 0 0 0px 20px;
+    margin: 0 0 -20px 20px;
 } 
 .adv_footer{
     float: left;
     margin: 0 0 30px 0;
 }
 .adv_footer>ul{
-    width: 1200px;
+    /*width: 1200px;*/
 }
 .adv_footer>ul>li{
     float: left;
@@ -657,7 +676,6 @@ body{
 .up_main{
     width: 770px;
     float: left;
-    height: 583px;
     margin: 0 0 0 20px;
 }
 .up_main_other_setting{
@@ -708,6 +726,9 @@ body{
     border-radius:4px;
     border: none;
 }
+.up_main>ul>li>div+div>form>input.button{
+    cursor: pointer;
+}
 .file{
     width: 647px;
     display: none;
@@ -754,7 +775,6 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
-    position: relative;
 }
 .book{
     display: none;
@@ -762,7 +782,9 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
-    position: relative;
+}
+.book .dis{
+    top: 73%;
 }
 .book>li>img{
     width: 133px;
@@ -787,7 +809,9 @@ body{
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
-    position: relative;
+}
+.app .dis{
+    top: 90%;
 }
 .app>li{
     float: left;
@@ -816,16 +840,21 @@ body{
 }
 .dis{
     position: absolute;
-    top:30px;
-    left: 7px;
+    top:20%;
+    left: 40%;
     width: 438px;
     height: 309px;
     background: #336ca6;
-    z-index: 100;
+    z-index: 9999;
     display: none;
 }
+.dis>div.dragPosition{
+    height: 30px;
+    cursor: move;
+    margin-bottom: -10px;
+}
 .dis>p{
-    font-size: 16px;
+    font-size: 24px;
     color: #fff;
     position: absolute;
     right: 12px;
@@ -970,14 +999,10 @@ body{
 /*************************************/
 /*用户控制*/
 /*************************************/
-.big_map>img{
-    width: 1200px;
-    height: 633px;
-    border-radius: 4px;
-}
 .big_map{
     float: left;
-    margin: 0 0 0 30px;
+    width: 95%;
+    height: 530px;
 }
 .search_line{
     width: 195px;
@@ -985,7 +1010,8 @@ body{
     background: #3b84ff;
     z-index: 2;
     position: absolute;
-    left: 78px;
+    left: 53px;
+    top: 60px;
     /*display: none;*/
 }
 .search_line>div{
@@ -1015,10 +1041,17 @@ body{
     height: 52px;
     color: #fff;
     text-align: center;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .search_line>ul>li>a:hover{
     background: #336ca6;
+}
+.search_line>ul>li>a i{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.search_line>ul>li>a i.icon-pencil{
+    margin-left: 10px;
 }
 .search_line .line_button{
     margin: 0;
@@ -1044,10 +1077,10 @@ body{
     left: 10px;
 }
 .line_add_con{
-    left: 70px;
+    left: 26px;
 }
 .line_alladd_con{
-    left: 130px;
+    left: 117px;
 }
 .car_edit_con{
     left: 10px;
@@ -1061,7 +1094,8 @@ body{
     background: #336ca6;
     z-index: 2;
     position: absolute;
-    left:273px;
+    left:248px;
+    top: 60px;
     /*display: none;*/
 }
 .search_car>div{

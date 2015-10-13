@@ -87,9 +87,9 @@ body{
     float: left;
 }
 .container .logo>h1{
-    font: 24px/30px '微软雅黑', sans-serif;
-    padding: 20px 0 0 20px;
-    color: #cf4a5d;
+    font: 40px '微软雅黑', sans-serif;
+    padding: 20px 0 0 10%;
+    color: #dc442c;
     float: left;
 }
 .log_main{
@@ -97,7 +97,11 @@ body{
     padding: 0px 0 0 50px ;
 }
 
-
+.footer>p{
+    margin: 10px 0 0 0 ;
+    text-align: center;
+    color: #fff;
+}
 .log_main>img{
     float: left;
     width: 300px;
@@ -138,7 +142,9 @@ body{
     background: none;
     float: left;
 }
-
+.weather{
+    margin: 471% 0 0 0 ;
+}
 .submit{
     display: block;
     width: 264px;
@@ -185,6 +191,7 @@ body{
 .container_subtitle{
     height: 60px;
     min-width: 1260px;
+    background: #000;
 }
 .container_subtitle img{
     width: 240px;
@@ -233,8 +240,11 @@ body{
     padding: 0 30px;
     clear: none;
 }
-.container_subtitle>ul+ul>li>a:hover,.action{
-    background: url(../images/menu.png) repeat-x;
+.action{
+    background: #003366;
+}
+.container_subtitle>ul+ul>li>a:hover{
+    background: #3284ff;
 }
 .container_title{
     min-width: 1280px;
@@ -242,8 +252,8 @@ body{
     background: #3b3b3b;
 }
 .container_title .left{
-    width:78px ;
-    background: #3b3b3b;
+    width:54px ;
+    background: #252525;
     float: left;
 }
 .left{
@@ -298,8 +308,8 @@ body{
 }
 .box_one>a{
     display: block;
-    width: 78px;
-    height: 87px;
+    width: 54px;
+    height: 61px;
     background: url(../images/search.png);
 }
 .box_one>a:hover{
@@ -310,13 +320,13 @@ body{
 }
 .box_two>a{
     display: block;
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/line.png) ;
 }
 .box_two>a:hover{
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/line_hover.png);
 }
 .display{
@@ -324,7 +334,7 @@ body{
     min-height: 583px;
     background: #3284ff;
     position: absolute;
-    left: 78px;
+    left: 54px;
     top: 100px;
     z-index: 1000;
     display: none;
@@ -388,7 +398,7 @@ body{
     min-height: 583px;
     background: #3385ff;
     position: absolute;
-    left: 78px;
+    left: 54px;
     top: 100px;
     display: none;
 }
@@ -490,28 +500,32 @@ body{
 /*************************************/
 .box_anly>a{
     display: block;
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/analysis.png);
 }
 .box_anly>a:hover{
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/analysis_hover.png);
 }
 .adv_main{
     width: 90%;
-    height: 400px;
+    height: 300px;
     float: left;
-    margin: 0 0 10px 20px;
+    margin: 0 0 0px 20px;
 } 
 .adv_footer{
-    margin: 0 0 30px 28px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.adv_footer>ul{
+    width: 1200px;
 }
 .adv_footer>ul>li{
     float: left;
-    width: 400px;
-    height: 300px;
+    width: 390px;
+    height: 230px;
     background-color: #ddd;
     margin-right: -100px;
 }
@@ -521,13 +535,13 @@ body{
 /*********************************************/
 .box_three>a{
     display: block;
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_line.png);
 }
 .box_three>a:hover{
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_line_hover.png) ;
 }
 .boxThreeHover{
@@ -535,24 +549,24 @@ body{
 }
 .box_four>a{
     display: block;
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_up.png) ;
 }
 .box_four>a:hover{
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_up_hover.png);
 }
 .box_five>a{
     display: block;
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_other.png) ;
 }
 .box_five>a:hover{
-    width: 78px;
-    height: 88px;
+    width: 54px;
+    height: 61px;
     background: url(../images/up_other_hover.png);
 }
 .userLeftBar{
@@ -641,7 +655,7 @@ body{
 }
 
 .up_main{
-    width: 826px;
+    width: 770px;
     float: left;
     height: 583px;
     margin: 0 0 0 20px;
@@ -682,7 +696,7 @@ body{
     margin: 0 0 10px 0;
 }
 .up_main>ul>li>div{
-    width: 826px;
+    width: 770px;
     height: 39px;
 }
 .up_main>ul>li>div+div>form{
@@ -705,7 +719,7 @@ body{
 .button{
     font: 16px '微软雅黑', sans-serif;
     color: #fff;
-    width: 169px;
+    width: 110px;
     background: #336ca6;
     margin: 0 0 0 10px;
 }
@@ -728,12 +742,15 @@ body{
 }
 .movie>li{
     float: left;
-    width: 170px;
-    margin: 12px 19px 0 17px;
+    width: 150px;
+    margin: 12px 19px 9px 17px;
+}
+.high{
+    height: 110px;
 }
 .movie{
     display: none;
-    width: 826px;
+    width: 770px;
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
@@ -741,22 +758,21 @@ body{
 }
 .book{
     display: none;
-    width: 826px;
+    width: 770px;
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
     position: relative;
 }
 .book>li>img{
-    width: 148px;
-    height: 203px;
+    width: 133px;
     padding: 5px;
     cursor: pointer;
 }
 .book>li>p>a{
     font: 16px '微软雅黑', sans-serif;
     color: #000;
-    margin: 5px 0 0 5px;
+    margin: 5px 0 0 16px;
 }
 .book>li>p>a:hover{
     color: #ef4f2f;
@@ -767,7 +783,7 @@ body{
 }
 .app{
     display: none;
-    width: 826px;
+    width: 770px;
     border-radius: 4px;
     background: #fff;
     margin: 10px 0 0 0 ;
@@ -775,13 +791,12 @@ body{
 }
 .app>li{
     float: left;
-    width: 78px;
+    width: 60px;
     margin: 0 17px 0 8px;
 }
 .app>li>img{
-    padding: 5px;
-    width: 78px;
-    height: 80px;
+    padding:11px 13px 0 0px;
+    width: 60px;
     cursor: pointer;
 }
 .app>li>h1>a{
@@ -1188,16 +1203,16 @@ body{
 .ad_subtitle{
     min-width: 700px;
     margin:0 50px;
-    height: 60px;
+    height: 40px;
     margin: 0  0 0 0px;
 }
 .ad_subtitle>li{
-    font: 20px/60px '微软雅黑', sans-serif;
+    font: 20px/40px '微软雅黑', sans-serif;
     float: left;  
 }
 .ad_subtitle>li>a{
     display: block;
-    height: 60px;
+    height: 40px;
     color: white;
     padding: 0 30px;
     background: #505050;

@@ -5,7 +5,7 @@
     }
     .container_title .display,.container_title .left_display{
         position: absolute;
-        left: 12%;
+        left: 10.5%;
     }
     .container_title .road_details,.container_title .bus_details{
         height: 100%;
@@ -27,7 +27,7 @@
     }
     .container_title .search_line{
         position: absolute;
-        left: 12%;
+        left: 10.5%;
     }
     .container_title{
         margin: 0 0 0 7.3%;
@@ -39,13 +39,23 @@
         margin: 0 7% 0 0;
     }
     .search_car{
-        left: 23.6% !important;
+        left: 22.5% !important;
     }
     .adv_footer>ul>li{
         width: 420px;
     }
     .ad_anly_pic>li{
         width: 700px !important;
+    }
+
+    #allmap,#user-map{
+        width: 88.5%;
+    }
+    .right{
+        right: 9%;
+    }
+    .footer{
+        left: 23%;
     }
 }
 @media screen and (min-width: 1680px){
@@ -54,7 +64,7 @@
     }
     .container_title .display,.container_title .left_display{
         position: absolute;
-        left: 15%;
+        left: 13.4%;
     }
     .container_title .hide_details{
         margin: 0 10.3% 0  0;
@@ -73,7 +83,7 @@
     }
     .container_title .search_line{
         position: absolute;
-        left: 15%;
+        left: 13.4%;
     }
     .container_title{
         margin: 0 0 0 10.3%;
@@ -85,10 +95,19 @@
         margin: 0 10% 0 0;
     }
     .search_car{
-        left: 26.6% !important;
+        left: 24.9% !important;
     }
     .adv_footer>ul>li{
         width: 430px;
+    }
+    #allmap,#user-map{
+        width: 85.5%;
+    }
+    .right{
+        right: 11%;
+    }
+    .footer{
+        left: 23.5%;
     }
 }
 
@@ -115,7 +134,7 @@
 	}
 	.container_title .search_line{
 		position: absolute;
-		left: 18.4%;
+		left: 17.1%;
 	}
 	.container_title{
 		margin: 0 0 0 14.3%;
@@ -127,12 +146,21 @@
 		margin: 0 13% 0 0;
 	}
     .search_car{
-        left: 28.5% !important;
+        left: 27.2% !important;
     }
     .adv_footer>ul>li{
         width: 460px;
     }
     .ad_anly_pic>li{
         width: 770px !important;
+    }
+    #allmap,#user-map{
+        width: 80.5%;
+    }
+    .right{
+        right: 15%;
+    }
+    .footer{
+        left: 27.5%;
     }
 }

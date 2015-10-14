@@ -4,9 +4,12 @@ body {
     font-size: 62.5%;
 }
 /* for IE/Win */
-
+html{
+    height: 100%;
+}
 html>body {
     font-size: 10px;
+    height: 100%;
 }
 
 /* for everything else */
@@ -276,13 +279,41 @@ body{
     height: 530px;
 }
 .right{
-    width: 180px;
     position: absolute;
     top: 100px;
     right: 30px;
+    
+}
+.show-legend,.hide-legend{
+    color: #000;
+    background-color: #fff;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 5px;
+}
+.right div a{
+    display: block;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #5D8AFB;
+    border-radius: 4px;
+    -moz-box-shadow:2px 2px 6px #949494;
+    -webkit-box-shadow:2px 2px 6px #949494; 
+    box-shadow:2px 2px 6px #949494;
+}
+.right div a:hover{
+    background-color: #54A0FF;
+    color: #000;
+}
+.right>ul{
+    width: 180px;
     border-radius: 10px;
     background-color: #ddd;
     background-color: rgba(221,221,221,0.6);
+    padding-top: 5px;
 }
 .right>ul>li>img{
     float: left;
@@ -368,14 +399,14 @@ body{
     top: 26px;
     left: 146px;
 }
-.search>form>p>input{
+.search p>input{
     border: none;
     width:121px ;
     height: 30px;
     float: left;
     background: none;
 }
-.search>form>p>a>img{
+.search p>a>img{
     width: 28px;
     height: 27px;
     float: right;
@@ -603,13 +634,13 @@ body{
     float: left;
     background-color: #336ca6;
 }
-.search_line_far form input,.search_car_far form input{
+.search_line_far div input,.search_car_far div input{
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.search_line_far form input:first-child,
-.search_car_far form input:first-child{
+.search_line_far div input:first-child,
+.search_car_far div input:first-child{
     width: 97px;
     height: 30px;
     border: none;
@@ -617,8 +648,8 @@ body{
     margin-left: 20px;
     margin-right: 10px;
 }
-.search_line_far form input+input,
-.search_car_far form input+input{
+.search_line_far div input+input,
+.search_car_far div input+input{
     height: 30px;
     width: 39px;
     cursor: pointer;
@@ -717,16 +748,16 @@ body{
     width: 770px;
     height: 39px;
 }
-.up_main>ul>li>div+div>form{
+.up_main>ul>li>div+div{
     margin: 10px 0 0  0;
 }
-.up_main>ul>li>div+div>form>input{
+.up_main>ul>li>div+div input{
     float: left;
     height: 36px;
     border-radius:4px;
     border: none;
 }
-.up_main>ul>li>div+div>form>input.button{
+.up_main>ul>li>div+div input.button{
     cursor: pointer;
 }
 .file{
@@ -848,7 +879,8 @@ body{
     z-index: 9999;
     display: none;
 }
-.dis>div.dragPosition{
+.dis>a.dragPosition{
+    display: block;
     height: 30px;
     cursor: move;
     margin-bottom: -10px;
@@ -861,18 +893,18 @@ body{
     top: 4px;
     cursor: pointer;
 }
-.dis>form>div .file{
+.dis div input.file{
     display: none;
     width:160px;
     height: 32px;
     border: none;
 }
-.dis>form>div .ye{
+.dis div .ye{
     background: #fff;
     width:160px;
     height: 32px;
 }
-.dis>form>div .button{
+.dis div .button{
     font: 12px '微软雅黑', sans-serif;
     color: #fff;
     width: 50px;
@@ -880,21 +912,21 @@ body{
     position: absolute;
     cursor: pointer;
 }
-.dis>form>div>p{
+.dis div>p{
     display: inline;
     color: #fff;
     font: 16px '微软雅黑', sans-serif;
 }
-.dis>form>div>input{
+.dis div>input{
     clear: both;
     width:160px;
     height: 32px;
     border: none;
 }
-.dis>form>div{
+.dis div{
     margin: 35px 0 0 84px;
 }
-.dis>form .dis_button{
+.dis div.dis_button{
     margin:26px 0 0 135px;
 
 }
@@ -907,28 +939,29 @@ body{
 /*********************************************/
 /*用户控制-其他设置*/
 /*********************************************/
-.other_set>form>input{
+.other_set input{
     width: 270px;
     height: 39px;
 }
-.up_main>ul>li .other_set>form>input+input{
+.up_main>ul>li .other_set input+input{
     background: #fff;
     width: 100px;
     float: right;
     cursor: pointer;
 }
 
-.other_set>form{
+.other_set{
     color: #fff;
     line-height: 54px;
 }
-.up_main>ul>li .web_set>form>textarea{
+.up_main>ul>li .web_set textarea{
     width: 420px;
     height: 136px;
     resize: none;
     border-radius: 4px;
+    float: left;
 }
-.up_main>ul>li .web_set>form>textarea+input{
+.up_main>ul>li .web_set textarea+input{
     width: 100px;
     float: right;
     height: 39px;
@@ -936,7 +969,7 @@ body{
     background: #fff;
     cursor: pointer;
 }
-.up_main>ul>li .reaset>form>input{
+.up_main>ul>li .reaset input{
     width: 100px;
     float: right;
     height: 39px;
@@ -1017,14 +1050,14 @@ body{
 .search_line>div{
     margin: 18px 0 64px 30px;
 }
-.search_line>div>form>input{
+.search_line>div input{
     width: 97px;
     height: 30px;
     border: none;
     border-radius: 4px; 
     position: absolute;
 }
-.search_line>div>form>input+input{
+.search_line>div input+input{
     height: 30px;
     width: 39px;
     cursor:pointer;
@@ -1101,13 +1134,13 @@ body{
 .search_car>div{
     margin: 18px 0 16px 19px;
 }
-.search_car>div>form>input{
+.search_car>div input{
     width: 147px;
     height: 30px;
     border: none;
     border-radius: 4px;
 }
-.search_car>div>form>input+input{
+.search_car>div input+input{
     height: 30px;
     width: 56px;
     cursor:pointer;

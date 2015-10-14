@@ -10,7 +10,15 @@ $(document).ready(function() {
 			opacity: '0.7'
 		});
 	});
-
+	// 图例的显示隐藏
+	$(".hide-legend").click(function() {
+		$(".right ul").hide();
+		$("#pie-index").hide();
+	});
+	$(".show-legend").click(function() {
+		$(".right ul").show();
+		$("#pie-index").show();
+	});
 	//搜索div
 	var display = $(".display");
 	//路线div
@@ -124,6 +132,7 @@ $(document).ready(function() {
 			window.event.cancelBubble = true;
 		}
 	});
+
 	var userLine = $(".search_line ul li i.icon-circle-arrow-right");
 	var userCar = $(".search_car");
 	var userLen = userLine.length;
@@ -142,6 +151,7 @@ $(document).ready(function() {
 			$(userCar[n]).addClass('hideTemp');
 		}
 	};
+
 	$(searchLine).click(function(e) {
 		var ev = e || window.event;
 		if (ev.stopPropagation) {
@@ -151,6 +161,14 @@ $(document).ready(function() {
 		}
 	});
 	$(userCar).click(function(e) {
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else if (window.event) {
+			window.event.cancelBubble = true;
+		}
+	});
+	$(".user_click").click(function(e) {
 		var ev = e || window.event;
 		if (ev.stopPropagation) {
 			ev.stopPropagation();
@@ -293,6 +311,7 @@ $(document).ready(function() {
 			winH = document.documentElement.scrollHeight || document.body.scrollHeight,
 			maxW = winW - oDrag.offsetWidth - 10,
 			maxH = winH - oDrag.offsetHeight;
+		document.title = winW + ',' + winH;
 		if (l < 0) {
 			l = 0;
 		} else if (l > maxW) {
@@ -303,7 +322,6 @@ $(document).ready(function() {
 		} else if (t > maxH) {
 			t = maxH;
 		}
-		document.title = l + "," + t;
 		oDrag.style.left = l + 'px';
 		oDrag.style.top = t + 'px';
 	}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>Remote Update</title>
+    <link rel="stylesheet"  href="css/high.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="out_container_subtitle">
+        <div class="container_subtitle">
+            <img src="images/index_logo.png" alt="logo">
+            <ul>
+                <li>
+                    <img src="images/admin.png" alt="">
+                    <p><a href="">admin</a></p>
+                </li>
+                <li>
+                    <img src="images/exit.png" alt="">
+                    <p><a href="">注销</a></p>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="index.html">总览</a></li>
+                <li><a href="Advertisement.html">广告和流量分析</a></li>
+                <li><a href="user-control.html">用户控制</a></li>
+                <li class="action"><a href="adv_set.html">广告设置</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="out_container_title">
+        <div class="container_title">
+            <div class="left">
+                <ul>
+                    <li class="box_adv_one">
+                        <a href="#">本地<br>广告<br>管理</a>
+                    </li>
+                    <li class="box_adv_two">
+                        <a href="#">远程<br>广告<br>管理</a>
+                    </li>
+                </ul>
+                <div class="weather">
+                    <img src="images/weather.png" alt="">
+                </div>
+            </div>
+            <div class="userLeftBar">
+                <div class="search_line_far">
+                    <div>
+                        <form action="form">
+                            <input type="text">
+                            <input type="submit" value="搜索">
+                            <div class="clr"></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li class="showTemp">
+                            <input type="checkbox" name="roadLine">
+                            <a>黄岛17路</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="roadLine">
+                            <a>黄岛18路</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="roadLine">
+                            <a>黄岛19路</a>
+                        </li>
+                    </ul>
+                    <a class="checkAll">全选</a>
+                    <a class="checkNone">取消全选</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="search_car_far">
+                    <div>
+                        <form action="form">
+                            <input type="text">
+                            <input type="submit" value="搜索">
+                            <div class="clr"></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B17</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B17</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B17</a>
+                        </li>
+                    </ul>
+                    <a class="checkAll">全选</a>
+                    <a class="checkNone">取消全选</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="search_car_far hideTemp">
+                    <div>
+                        <form action="form">
+                            <input type="text">
+                            <input type="submit" value="搜索">
+                            <div class="clr"></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B18</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B18</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B18</a>
+                        </li>
+                    </ul>
+                    <a class="checkAll">全选</a>
+                    <a class="checkNone">取消全选</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="search_car_far hideTemp">
+                    <div>
+                        <form action="form">
+                            <input type="text">
+                            <input type="submit" value="搜索">
+                            <div class="clr"></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B19</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B19</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="car">
+                            <a href="#">鲁B19</a>
+                        </li>
+                    </ul>
+                    <a class="checkAll">全选</a>
+                    <a class="checkNone">取消全选</a>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="wait"></div>
+            <div class="up_main up_main_other_setting">
+                <ul>
+                    <li>
+                        <div class="subtitle">
+                            <p>广告更新</p>
+                        </div>
+                        <ul class="adv_other_set">
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/adv_images.png" alt="">
+                                <div class="dis">
+                                        <a class="dragPosition"></a>
+                                        <p><i class="icon-remove"></i></p>
+                                        <form action="form" method="get">
+                                        <div>
+                                            <p>广告图片：</p>
+                                            <input type="file" class="file" name="a" onchange="a1.value=value">
+                                            <input name="a1" class="ye">
+                                            <input type="button" value="打开" class="button" onclick=a.click()>
+                                        </div>
+                                        <div>
+                                            <p>图片简介： </p>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <p>文字简介： </p>
+                                            <input type="text">
+                                            <br>
+                                        </div>
+                                        <div class="dis_button">
+                                            <input type="button" value="提交">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="clear"></ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="address-footer">
+                <p>版权:青岛智能产业技术研究院</p>
+                <p>2015 all rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

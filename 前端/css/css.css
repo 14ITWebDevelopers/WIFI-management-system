@@ -1321,3 +1321,31 @@ body{
 .ad_rank_pic>li>p>a:hover{
     color: #fe8463;
 }
+/*********************************************/
+/*广告设置*/
+/*********************************************/
+.left .box_adv_one>a,.left .box_adv_two>a{
+    color:#fff;
+    display: block;
+    text-align: center;
+    padding: 5px 0 0 0;
+    width: 54px;
+    height: 55px;
+}
+.left .box_adv_one>a:hover,.left .box_adv_two>a:hover{
+    background: #3b84ff;
+}
+.adv_other_set{
+    width: 770px;
+    height: 400px;
+    margin: 10px 0 0 0;
+    background: #fff;
+    border-radius: 4px;
+}
+.adv_other_set>li{
+    float: left;
+    margin: 25px 69px 0 59px;
+}
+.adv_other_set>li>img{
+    cursor: pointer;
+}

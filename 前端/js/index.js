@@ -248,7 +248,7 @@ $(document).ready(function() {
 		$(this).next().stop(true, false).slideToggle();
 
 	});
-	$(".subtitle_1+ul>li>img").click(function(e) {
+	$(".subtitle_1+ul>li>img,.adv_other_set>li>img").click(function(e) {
 		$(".dis").hide().removeClass('canDrag');
 		// 弹出框位置设置在当前显示窗口的中央处
 		var disPosition = $(window).scrollTop()+ $(window).height()/2 - 180;

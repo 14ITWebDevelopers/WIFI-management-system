@@ -255,7 +255,7 @@ body{
     width:54px ;
     height: 530px;
     background: #252525;
-    float: left;
+    position: absolute;
 }
 .left{
     float: left;
@@ -271,11 +271,11 @@ body{
     cursor: pointer;
 }
 .main{
-    margin-left: 30px;
+    margin-left: 54px;
     width: 75%;
 }
 #allmap{
-    width: 95.5%;
+    width: 91.5%;
     height: 530px;
 }
 .right{
@@ -331,9 +331,10 @@ body{
 }
 .address-footer{
     width: 159px;
-    margin: 0 auto;
     color: #fff;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
 }
 .footer>ul>li>div>p{
     color: #fff;
@@ -475,7 +476,7 @@ body{
 }
 .hide_details{
     position: absolute;
-    right: 20px;
+    right: 0px;
     top: 60px;
 }
 .hideTemp,.hideTempAnother{
@@ -563,11 +564,11 @@ body{
     width: 90%;
     height: 300px;
     float: left;
-    margin: 0 0 -20px 20px;
+    margin: 0 0 -20px 74px;
 } 
 .adv_footer{
     float: left;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 74px;
 }
 .adv_footer>ul{
     /*width: 1200px;*/
@@ -622,6 +623,7 @@ body{
 .userLeftBar{
     width:408px;
     float: left;
+    margin: 0 0 0 54px;
 }
 .search_line_far{
     width: 200px;
@@ -708,9 +710,6 @@ body{
     width: 770px;
     float: left;
     margin: 0 0 0 20px;
-}
-.up_main_other_setting{
-    margin-left: 15%;
 }
 .up_main .subtitle{
     background: #3b84ff;
@@ -1034,7 +1033,8 @@ body{
 /*************************************/
 .big_map{
     float: left;
-    width: 95%;
+    width: 91.5%;
+    margin: 0 0 0 54px;
     height: 530px;
 }
 .search_line{
@@ -1271,7 +1271,7 @@ body{
     min-width: 700px;
     margin:0 50px;
     height: 40px;
-    margin: 0  0 0 0px;
+    margin: 0  0 0 54px;
 }
 .ad_subtitle>li{
     font: 20px/40px '微软雅黑', sans-serif;
@@ -1288,7 +1288,7 @@ body{
     background: #3b84ff;
 }
 .ad_anly_pic{
-    margin-top: 20px;
+    margin: 20px 0 0 54px; 
 }
 .ad_anly_pic>li{
     float: left;
@@ -1299,6 +1299,7 @@ body{
 }
 .ad_rank_pic{
     width: 600px;
+    margin: 0 0 0 54px;
 }
 .ad_rank_pic>li{
     float: left;

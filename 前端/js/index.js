@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	// 总览中的图表
+	// 总览中四个圈的变淡加深效果
 	$("#pie-index>ul>li").mouseenter(function(event) {
 		$(this).stop(true, false).animate({
 			opacity: '1'

@@ -247,7 +247,7 @@ body{
     background: #3284ff;
 }
 .container_title{
-    min-width: 1280px;
+    /*min-width: 1280px;*/
     /*height: 583px;*/
     background: #3b3b3b;
 }
@@ -257,12 +257,11 @@ body{
     background: #252525;
     position: absolute;
 }
-.left{
-    float: left;
-/*    position: absolute;
-    left: 0;
-    z-index: 1000;*/
-
+.container_title div.left-user{
+    height: 530px !important;
+}
+.container_title div.left-user .weather{
+    margin-top: 250px !important;
 }
 .weather{
     margin-top: 250px;
@@ -274,14 +273,14 @@ body{
     margin-left: 54px;
     width: 75%;
 }
-#allmap{
-    width: 91.5%;
+#allmap,#user-map{
+    width: 94.5%;
     height: 530px;
 }
 .right{
     position: absolute;
     top: 100px;
-    right: 30px;
+    right: 45px;
     
 }
 .show-legend,.hide-legend{
@@ -332,15 +331,12 @@ body{
 .address-footer{
     width: 159px;
     color: #fff;
-    position: absolute;
-    bottom: 10px;
-    left: 45%;
+    margin: 10px auto 0 auto;
 }
 .footer>ul>li>div>p{
     color: #fff;
 }
 .footer{
-    /*margin-left: 80px;*/
     position: absolute;
     top: 340px;
     left: 300px;
@@ -441,9 +437,6 @@ body{
     color: #fff;
     background: #336ca6;
 }
-.road_display{
-    z-index: 1000;
-}
 .left_display{
     width: 159px;
     min-height: 530px;
@@ -452,6 +445,7 @@ body{
     left: 54px;
     top: 60px;
     display: none;
+    z-index: 1000;
 }
 .left_display>ul{
     margin:20px 0 0 0;
@@ -563,15 +557,10 @@ body{
 .adv_main{
     width: 90%;
     height: 300px;
-    float: left;
     margin: 0 0 -20px 74px;
 } 
 .adv_footer{
-    float: left;
     margin: 0 0 30px 74px;
-}
-.adv_footer>ul{
-    /*width: 1200px;*/
 }
 .adv_footer>ul>li{
     float: left;
@@ -584,6 +573,11 @@ body{
 /*********************************************/
 /*用户控制-远程更新*/
 /*********************************************/
+.container_title_user{
+    width: 93%;
+    min-width: 1256px;
+    /*margin: 0 auto;*/
+}
 .box_three>a{
     display: block;
     width: 54px;
@@ -1032,14 +1026,12 @@ body{
 /*用户控制*/
 /*************************************/
 .big_map{
-    float: left;
     width: 91.5%;
     margin: 0 0 0 54px;
     height: 530px;
 }
 .search_line{
     width: 195px;
-    min-height: 393px;
     background: #3b84ff;
     z-index: 2;
     position: absolute;
@@ -1086,10 +1078,14 @@ body{
 .search_line>ul>li>a i.icon-pencil{
     margin-left: 10px;
 }
+.search_line div+ul{
+    margin-bottom: 173px;
+}
 .search_line .line_button{
     margin: 0;
-    margin-top: 118px;
+    /*margin-top: 118px;*/
     position: relative;
+    bottom: 45px;
 }
 .car_button .we_click{
     margin-left: 40px;
@@ -1123,7 +1119,6 @@ body{
 }
 .search_car{
     width: 247px;
-    min-height: 393px;
     background: #336ca6;
     z-index: 2;
     position: absolute;
@@ -1157,8 +1152,12 @@ body{
 .search_car>ul>li>a:hover{
     background: #3b84ff;
 }
+.search_car> div+ul{
+    margin-bottom: 173px;
+}
 .search_car .car_button{
-    margin: 118px 0 0 0 ;
+    position: relative;
+    bottom: 45px;
 }
 .search_car .car_button>div>p{
     font: 12px '微软雅黑', sans-serif;
@@ -1328,7 +1327,7 @@ body{
     color:#fff;
     display: block;
     text-align: center;
-    padding: 5px 0 0 0;
+    padding: 10px 0;
     width: 54px;
     height: 55px;
 }
